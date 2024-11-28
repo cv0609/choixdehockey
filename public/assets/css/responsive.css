@@ -1,0 +1,784 @@
+@media screen and (max-width:1200px) {
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding: 50px;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .navbar-menu {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+  
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        text-align: end;
+        z-index: 55;
+        font-size: 21px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .banner-right {
+        height: 550px;
+    }
+
+    .home-banner-text h2 {
+        font-size: 35px;
+    }
+
+    .home-why-hockey-cards h3 {
+        font-size: 28px;
+    }
+
+    .from-our-user-card-top p {
+        max-width: 188px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .from-our-user-card-bottom p {
+        font-size: 18px;
+    }
+    .banner-content h1 {
+        font-size: 50px;
+    }
+    .pages-banner {
+        height: 500px;
+    }
+    .header-signup {
+        margin-left: 0;
+    }
+ 
+    .header-btns {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto !important;
+        text-align: center;
+    }
+    .header-login {
+        margin-left: 0;
+        margin-top: 20px !important;
+    }
+    .site-header {
+        z-index: 50;
+    }
+    .modal-content {
+        z-index: 999;
+    }
+    .card {
+        width: auto;
+    }
+    .footer-pages .banner-text h1 {
+        font-size: 43px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .home-info-wrap-second-img1 {
+        height: 420px;
+        width: 380px;
+    }
+
+    .home-info-wrap-second-img2 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .banner-right {
+        height: 500px;
+    }
+
+    .home-banner-text h2 {
+        font-size: 30px;
+    }
+
+    .home-banner-btn {
+        padding: 14px 30px;
+        font-size: 18px;
+    }
+
+    .home-info-wrap-first-content p {
+        font-size: 19px;
+    }
+
+    .home-why-hockey-section {
+        padding: 130px 0;
+    }
+
+    .home-why-hockey-cards h3 {
+        font-size: 18px;
+    }
+
+    .home-why-hockey-cards p {
+        font-size: 16px;
+    }
+
+    .home-why-hockey-heading {
+        font-size: 27px;
+    }
+
+    .our-users-heading {
+        font-size: 40px;
+    }
+
+    #counter .item {
+        padding: 15px 0px;
+    }
+
+    .newsletter-wrapper h3 {
+        font-size: 28px;
+    }
+
+    .newsletter-upper-image {
+        top: 20px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .newsletter-lower-image {
+        bottom: 20px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .from-our-user-cards {
+        padding: 0;
+    }
+
+    .from-our-user-card-top p {
+        color: #000;
+        max-width: 150px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .from-our-user-card-bottom {
+        padding: 0 15px;
+    }
+
+    .from-our-user-card-bottom p {
+        font-size: 16px;
+        max-width: 110px;
+    }
+    .footer-blocks ul li a {
+        font-size: 17px;
+    }
+    .footer-socials p {
+        font-size: 17px;
+    }
+    .footer-disclaimer p {
+        font-size: 15px;
+    }
+    .ssl-container {
+        margin-top: 20px;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+    }
+    .pages-banner {
+        height: 450px;
+    }
+    .how-to-play-cards-content p {
+        font-size: 16px;
+    }
+    .down-arrow-container {
+        height: 70px;
+    }
+    .banner-text h1 {
+        font-size: 45px;
+    }
+    .header-pages-cards-content p {
+        font-size: 15px;
+    }
+    .footer-pages .banner-text h1 {
+        font-size: 38px;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 27px;
+    }
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .banner .row {
+        flex-direction: column-reverse;
+    }
+
+    .home-banner-text {
+        padding: 30px 0;
+    }
+
+    .home-banner-text h2 {
+        font-size: 35px;
+    }
+
+    .home-banner-btn {
+        padding: 13px 30px;
+        font-size: 17px;
+    }
+
+    .home-about-info-wrap .row {
+        flex-direction: column-reverse;
+    }
+
+    .home-info-wrap-first-content p {
+        font-size: 18px;
+    }
+
+    .home-choices-line {
+        left: 120px;
+    }
+
+    .home-choices-line {
+        display: none;
+    }
+
+    .home-choices-cards-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .home-choices-card {
+        margin-bottom: 40px;
+    }
+
+    .home-why-hockey-cards h3 {
+        font-size: 24px;
+    }
+
+    .home-why-hockey-cards {
+        margin-bottom: 40px;
+        max-width: 100%;
+        min-height: 170px;
+    }
+
+    .our-users-heading {
+        font-size: 30px;
+    }
+
+    #counter .item {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .newsletter-upper-image {
+        top: 20px;
+    }
+
+    .newsletter-lower-image {
+        bottom: 20px;
+    }
+
+    .newsletter-wrapper h3 {
+        font-size: 26px;
+    }
+
+    .newsletter-input {
+        width: 80%;
+        font-size: 15px;
+        padding: 11px 25px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+    }
+
+    .butn {
+        padding: 12px 25px;
+        border-radius: 25px;
+    }
+
+    .our-user-heading {
+        font-size: 33px;
+    }
+
+    .from-users-heading-wrap {
+        max-width: 300px;
+    }
+
+    .from-our-user-cards {
+        background-position: center;
+    }
+
+    .from-our-user-card-top p {
+        max-width: 170px;
+        padding: 0 17px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .from-our-user-card-bottom p {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .footer-menus h3 {
+        font-size: 27px;
+    }
+    .footer-blocks ul li a {
+        font-size: 18px;
+    }
+    .footer-socials h3 {
+        font-size: 26px;
+    }
+    .footer-socials p {
+        font-size: 18px;
+    }
+    .footer-disclaimer p {
+        font-size: 16px;
+    }
+    .ssl-container {
+        margin-top: 25px;
+    }
+    .footer-menus ,.footer-socials {
+        width: 50%;
+    }
+    .footer-disclaimer {
+        width: 100%;
+        padding: 15px;
+    }
+    .banner-content h1 {
+        font-size: 40px;
+    }
+    .how-to-play {
+        background-position: 0 0;
+    }
+    .pages-banner {
+        height: 400px;
+    }
+    .how-to-play-cards-content p {
+        font-size: 17px;
+    }
+    .how-to-play-card-image {
+        height: 350px;
+        margin-bottom: 30px;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .header-pages-cards-content {
+        padding: 30px 0;
+    }
+    .header-pages-cards-image {
+        height: 350px;
+    }
+    .after-banner-text p {
+        font-size: 16px;
+    }
+    .footer-pages .banner-text h1 {
+        font-size: 33px;
+    }
+    .footer-pages-content-grp {
+        padding: 20px 0;
+    }
+    .footer-pages-content-grp p {
+        font-size: 16px;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .banner-right {
+        height: 360px;
+    }
+
+    .home-banner-text h2 {
+        font-size: 25px;
+    }
+
+    .home-banner-text h2 {
+        font-size: 30px;
+    }
+
+    .home-banner-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .home-info-wrap-pattern1 {
+        width: 120px;
+    }
+
+    .home-info-wrap-first-content p {
+        font-size: 17px;
+    }
+
+    .home-choices-wrap h2 {
+        max-width: 350px;
+        font-size: 30px;
+    }
+
+    .home-why-hockey-section {
+        padding: 90px 0;
+    }
+
+    .home-why-hockey-heading1 {
+        padding: 11px 10px;
+    }
+
+    .home-why-hockey-heading {
+        font-size: 25px;
+    }
+
+    .home-why-hockey-heading2 {
+        padding: 10px;
+    }
+
+    .home-why-hockey-heading-wrap {
+        max-width: 300px;
+    }
+
+    .home-why-hockey-cards h3 {
+        font-size: 22px;
+    }
+
+    .home-why-hockey-cards p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .home-why-hockey-cards {
+        margin-bottom: 40px;
+    }
+
+    .home-why-hockey-cards {
+        min-height: 190px;
+    }
+
+    .our-users-heading {
+        font-size: 25px;
+    }
+
+    #counter .item .count,
+    .non-counter,
+    .item-wrapper span {
+        font-size: 30px;
+    }
+
+    #counter .item p {
+        font-size: 17px;
+    }
+
+    .newsletter-upper-image {
+        top: 20px;
+        width: 110px;
+        height: 40px;
+    }
+
+    .newsletter-lower-image {
+        bottom: 20px;
+        width: 110px;
+        height: 40px;
+    }
+
+    .newsletter-wrapper h3 {
+        font-size: 24px;
+    }
+
+    .butn {
+        padding: 11px 25px;
+        font-size: 15px;
+    }
+
+    .newsletter-input {
+        width: 85%;
+    }
+
+    .our-user-heading1 {
+        padding: 4px;
+    }
+
+    .our-user-heading {
+        font-size: 27px;
+    }
+
+    .from-our-user-card-bottom {
+        padding: 0px 10px;
+    }
+
+    .from-our-user-card-top p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    .from-our-user-card-bottom p {
+        margin-right: 40px;
+    }
+
+    .from-our-user-card-top p {
+        max-width: 235px;
+        padding: 0 17px;
+    }
+
+    .from-our-user-cards {
+        height: 470px;
+    }
+    .footer-blocks {
+        width: 100%;
+    }
+    .footer-menus h3 {
+        font-size: 25px;
+    }
+    .footer-blocks ul li a {
+        font-size: 17px;
+    }
+    .footer-socials h3 {
+        font-size: 24px;
+    }
+    .footer-socials p {
+        font-size: 17px;
+    }
+    .footer-disclaimer p {
+        font-size: 15px;
+    }
+    .copyright-wrap p {
+        font-size: 15px;
+    }
+    .banner-content h1 {
+        font-size: 35px;
+    }
+    .pages-banner {
+        height: 350px;
+    }
+    .how-to-play-cards-content h3 {
+        font-size: 22px;
+    }
+    .how-to-play-cards-content p {
+        font-size: 16px;
+    }
+    .down-arrow-container {
+        height: 60px;
+    }
+    .how-to-play-card-image {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .banner-text h1 {
+        font-size: 35px;
+    }
+    .header-pages-cards-image {
+        height: 300px;
+    }
+    .header-pages-cards-content p {
+        font-size: 16px;
+    }
+    .header-pages-cards h3 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .footer-pages .banner-text h1 {
+        font-size: 28px;
+    }
+    .footer-pages-wrap {
+        padding: 30px 15px;
+    }
+    .footer-pages-content-grp p {
+        font-size: 15px;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 21px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .site-logo a {
+        height: 50px;
+        width: 200px;
+    }
+
+    .home-info-wrap-second-img2 {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .home-info-wrap-second-img1 {
+        height: 350px;
+        width: 300px;
+    }
+
+    .banner-right {
+        height: 300px;
+    }
+
+    .home-banner-text h2 {
+        font-size: 22px;
+    }
+
+    .home-banner-btn {
+        padding: 11px 30px;
+        font-size: 15px;
+    }
+
+    .home-info-wrap-first-content p {
+        font-size: 16px;
+    }
+
+    .home-choices-wrap h2 {
+        font-size: 22px;
+    }
+
+    .home-choices-cards-info h3 {
+        font-size: 22px;
+    }
+
+    .home-choices-cards-image {
+        height: 260px;
+        width: 260px;
+    }
+
+    .home-why-hockey-cards h3 {
+        font-size: 20px;
+    }
+
+    .home-why-hockey-cards {
+        min-height: 210px;
+    }
+
+    .home-why-hockey-section {
+        padding: 50px 0;
+    }
+
+    .our-users-heading {
+        font-size: 20px;
+    }
+
+    .newsletter-wrapper h3 {
+        font-size: 22px;
+    }
+
+    .from-users-heading-wrap {
+        max-width: 280px;
+    }
+
+    .from-our-user-card-top {
+        padding: 10px;
+    }
+
+    .from-our-user-card-top p {
+        font-size: 14px;
+        max-width: 190px;
+        font-weight: 600;
+        padding: 0 15px;
+    }
+
+    .from-our-user-card-bottom p {
+        font-size: 16px;
+    }
+
+    .from-our-user-cards {
+        height: 470px;
+    }
+
+    .from-our-user-cards:nth-child(2) {
+        height: 650px;
+    }
+    .footer-blocks ul li a {
+        font-size: 16px;
+    }
+    .footer-socials h3 {
+        font-size: 22px;
+    }
+    .footer-socials p {
+        font-size: 16px;
+    }
+    .footer-disclaimer p {
+        font-size: 14px;
+    }
+    .social-icons {
+        height: 40px;
+        width: 40px;
+    }
+    .social-ikons {
+        width: 18px;
+        height: 18px;
+    }
+    .copyright-wrap p {
+        font-size: 14px;
+    }
+    .banner-content h1 {
+        font-size: 30px;
+    }
+    .pages-banner {
+        height: 300px;
+    }
+    .after-banner-text p {
+        font-size: 14px;
+    }
+    .how-to-play-cards-content h3 {
+        font-size: 20px;
+    }
+    .how-to-play-card-image {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .home-list {
+        padding-right: 10px;
+    }
+    .inline-list h3 a, .inline-list h3 {
+        font-size: 20px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .header-pages-cards {
+        padding: 0;
+    }
+    .header-pages-cards-image {
+        height: 250px;
+    }
+    .header-pages-cards h3 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .card_title h1 {
+        font-size: 22px;
+    }
+    #contact button[type="submit"] {
+        padding: 11px 30px;
+        font-size: 15px;
+    }
+    .footer-pages .banner-text h1 {
+        font-size: 23px;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 18px;
+    }
+
+}
