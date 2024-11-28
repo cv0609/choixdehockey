@@ -58,15 +58,15 @@
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Prénom"
                                                     class="form-control para" id="name" required="required"
-                                                    autocomplete="off">
+                                                    autocomplete="off" name="name" value="{{Auth::user()->name}}">
                                             </div>
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Nom de famille" class="form-control para"
-                                                    id="last-name" required="required" autocomplete="off">
+                                                    id="last-name" required="required" name="username" autocomplete="off" value="{{Auth::user()->username}}">
                                             </div>
                                             <div class="mb-3 col-sm-6">
                                                 <input type="email" placeholder="E-mail" class="form-control para"
-                                                    id="email" required="required" autocomplete="off">
+                                                    id="email" required="required" autocomplete="off" name="email" value="{{Auth::user()->email}}">
                                             </div>
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Téléphone" class="form-control para"
