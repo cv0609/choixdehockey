@@ -68,12 +68,12 @@
                                                 <input type="email" placeholder="E-mail" class="form-control para"
                                                     id="email" required="required" autocomplete="off" name="email" value="{{Auth::user()->email}}">
                                             </div>
-                                            <div class="mb-3 col-sm-6">
+                                            <!-- <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Téléphone" class="form-control para"
                                                     id="Phone" required="required" autocomplete="off">
-                                            </div>
+                                            </div> -->
 
-                                            <div class="mb-3 col-sm-6">
+                                            <!-- <div class="mb-3 col-sm-6">
                                                 <div class="show_password">
                                                     <input type="password" placeholder="Mot de passe"
                                                         class="form-control para" id="password-field"
@@ -83,7 +83,7 @@
                                             <div class="mb-3 col-sm-6">
                                                 <input type="password" placeholder="Confirmez le mot de passe"
                                                     class="form-control para" id="con_password" required="required">
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <button type="submit" class="btn btn-primary">Mise à jour</button>
 
