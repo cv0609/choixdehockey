@@ -9,7 +9,7 @@
                         <div class="home-banner-text d-flex flex-column justify-content-center align-items-center">
                             <h2>
                                 Assemblez votre équipe. Dominez la glace. Vivez l’expérience ultime du hockey
-                                fantastique!mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+                                fantastique!
                             </h2>
                             <a href="leagues" class="home-banner-btn">Jouez maintenant</a>
                         </div>
