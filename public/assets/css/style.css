@@ -1196,7 +1196,7 @@ img {
 }
 
 .ice-leagues tbody tr td {
-    padding: 20px 30px;
+    padding: 20px 30px !important;
     color: #29292a;
     font-size: 15px;
     vertical-align: middle;
@@ -2821,4 +2821,30 @@ div#myTable_paginate {
     background: #fff;
     color: #000;
     border-radius: 5px;
+}
+.matches-page .ice-leagues thead tr th:nth-child(2) {
+    text-align: center;
+}
+.matches-page.ice-leagues thead tr th:nth-child(2) {
+    text-align: center !important;
+}
+.matches-page.ice-leagues thead tr th:nth-child(3) {
+    text-align: right !important;
+}
+.match-details .team-logo img {
+    height: 35px;
+    width: 35px;
+}
+.match-details .matches-table tr td:first-child {
+    text-align: left !important;
+}
+.match-details .ice-leagues tbody tr td:nth-child(2) {
+    text-align: left !important;
+}
+.ice-leagues-inner-content .matche-det table th:nth-child(2),.ice-leagues-inner-content .matche-det table th:nth-child(3),.ice-leagues-inner-content .matche-det table th:nth-child(4) {
+    text-align: center !important;
+}
+tr.matche-main td p {
+    color: #000;
+    font-size: 17px;
 }

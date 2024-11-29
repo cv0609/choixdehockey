@@ -23,7 +23,7 @@
 
     <!-- Leagues Content Section Start -->
 
-    <section class="ice-leagues">
+    <section class="ice-leagues match-details">
         <div class="container">
 
 
@@ -65,6 +65,7 @@
                         <a href="#" class="tab active" data-toggle-target=".tab-content-1">Defender</a>
                         <a href="#" class="tab" data-toggle-target=".tab-content-2">Attacker</a>
                         <a href="#" class="tab" data-toggle-target=".tab-content-3">Goalkeeper</a>
+                        <a href="#" class="tab" data-toggle-target=".tab-content-4">Midkeeper</a>
                     </div>
 
                     <div class="tab-content tab-content-1 active">
@@ -83,20 +84,20 @@
                                         @foreach ($organizedPlayers['Defender'] as $def_player)
 
                                         <tr class="matche-main" data-team-id="{{$def_player->player_team_id}}" data-player-id="{{$def_player->player_id}}" data-player-role="D" data-player-name="{{$def_player->name}}" data-team-logo="{{$def_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
-
-                                           <td class="player-dp">
-                                              {{-- <img src="assets/images/dp.png" alt="dp"> --}}
-                                           </td>
-                                           <td>
+                                        <td>
                                             <h6>{{ $def_player->name }}</h6>
                                             {{-- <span>sel by 0.38%</span> --}}
                                          </td>
                                          <td class="team-logo">
                                              <img src="{{$def_player->team_logo}}" alt="team-logo-2">
                                          </td>
-                                           <td>
+                                         <td>
                                               <p>{{$def_player->age}}</p>
                                            </td>
+                                           <!-- <td class="player-dp">
+                                              {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                           </td> -->
+                                         
                                            <td class="credits_points">
                                               <span>{{ ($def_player->injured == '1') ?
                                             'Yes' : 'No'}}</span>
@@ -136,9 +137,9 @@
 
                                         <tr class="matche-main" data-team-id="{{$st_player->player_team_id}}" data-player-id="{{$st_player->player_id}}" data-player-role="F" data-player-name="{{$st_player->name}}" data-team-logo="{{$st_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
 
-                                            <td class="player-dp">
+                                            <!-- <td class="player-dp">
                                                {{-- <img src="assets/images/dp.png" alt="dp"> --}}
-                                            </td>
+                                            </td> -->
                                             <td>
                                              <h6>{{ $st_player->name }}</h6>
                                              {{-- <span>sel by 0.38%</span> --}}
@@ -186,9 +187,61 @@
                                         @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
 
                                         <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
-                                           <td class="player-dp">
+                                           <!-- <td class="player-dp">
                                               {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                           </td> -->
+                                           <td>
+                                            <h6>{{ $gk_player->name }}</h6>
+                                            {{-- <span>sel by 0.38%</span> --}}
+                                         </td>
+                                         <td class="team-logo">
+                                             <img src="{{$gk_player->team_logo}}" alt="team-logo-2">
+                                         </td>
+                                           <td>
+                                              <p>{{$gk_player->age}}</p>
                                            </td>
+                                           <td class="credits_points">
+                                              <span>{{ ($gk_player->injured == '1') ?
+                                            'Yes' : 'No'}}</span>
+                                              <button class="plus player-toggle" data-event="plus">
+                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                              </button>
+                                              <button class="minus player-toggle d-none" data-event="minus">
+                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                              </button>
+                                           </td>
+                                        </tr>
+                                        @endforeach
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="team-btns">
+                                <a href="team-view" class="next-btn">next</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="tab-content tab-content-4">
+                        <div class="ice-leagues-inner-content">
+                            <div class="matches-table matche-det">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="">Sélectionné par</th>
+                                            <th scope="col">Équipe</th>
+                                            <th scope="col">Âge </th>
+                                            <th scope="col">Blessé </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
+
+                                        <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
+                                           <!-- <td class="player-dp">
+                                              {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                           </td> -->
                                            <td>
                                             <h6>{{ $gk_player->name }}</h6>
                                             {{-- <span>sel by 0.38%</span> --}}

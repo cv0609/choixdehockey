@@ -22,7 +22,7 @@
     <!--Leagues Pages Banner Section End -->
 
     <!-- Leagues Content Section Start -->
-    <section class="ice-leagues">
+    <section class="ice-leagues matches-page">
         <div class="container">
             <div class="ice-leagues-inner">
                 <div class="back-btn">
