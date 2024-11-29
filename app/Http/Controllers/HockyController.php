@@ -33,7 +33,7 @@ class HockyController extends Controller
      public function getLeagueMatches($leagueId)
      {
         $matches = Matche::getMatchByLeagueId($leagueId);
-   
+
         if(isset($matches) && !empty($matches))
          {
             return view('front_end.pages.hocky.matches',compact('matches'));
@@ -46,8 +46,8 @@ class HockyController extends Controller
 
      public function matchDetails($matcheId)
       {
-        
-        $matchDetails = Matche::with(['matchPlayers','league'])->where('id',$matcheId)->first();  
+
+        $matchDetails = Matche::with(['matchPlayers','league'])->where('id',$matcheId)->first();
 
         $organizedPlayers = [
             'Attacker' => [],
@@ -59,13 +59,14 @@ class HockyController extends Controller
         if(isset($matchDetails->matchPlayers) && !empty($matchDetails->matchPlayers)){
 
             foreach($matchDetails->matchPlayers as $player){
-    
+
                 if (isset($organizedPlayers[$player->position])) {
-                    
+
                     $organizedPlayers[$player->position][] = $player;
                 }
             }
         }
+
         return view('front_end.pages.hocky.premier_league_players',compact('matchDetails','organizedPlayers','matcheId'));
       }
 

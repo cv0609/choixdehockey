@@ -80,176 +80,36 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        @foreach ($organizedPlayers['Defender'] as $def_player)
 
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner  match-team-logo-inner1"></div>
-                                                </a>
-                                            </td>
+                                        <tr class="matche-main" data-team-id="{{$def_player->player_team_id}}" data-player-id="{{$def_player->player_id}}" data-player-role="D" data-player-name="{{$def_player->name}}" data-team-logo="{{$def_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
 
-                                            <td class="match-position">
-                                                <p>12</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner2"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>07</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner3"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>67</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner4"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner5"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>37</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner6"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Arthur Thieffry</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner7"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>17</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
+                                           <td class="player-dp">
+                                              {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                           </td>
+                                           <td>
+                                            <h6>{{ $def_player->name }}</h6>
+                                            {{-- <span>sel by 0.38%</span> --}}
+                                         </td>
+                                         <td class="team-logo">
+                                             <img src="{{$def_player->team_logo}}" alt="team-logo-2">
+                                         </td>
+                                           <td>
+                                              <p>{{$def_player->age}}</p>
+                                           </td>
+                                           <td class="credits_points">
+                                              <span>{{ ($def_player->injured == '1') ?
+                                            'Yes' : 'No'}}</span>
+                                              <button class="plus player-toggle" data-event="plus">
+                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                              </button>
+                                              <button class="minus player-toggle d-none" data-event="minus">
+                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                              </button>
+                                           </td>
                                         </tr>
 
-
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -272,176 +132,35 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        @foreach ( $organizedPlayers['Attacker'] as $st_player)
 
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner8"></div>
-                                                </a>
-                                            </td>
+                                        <tr class="matche-main" data-team-id="{{$st_player->player_team_id}}" data-player-id="{{$st_player->player_id}}" data-player-role="F" data-player-name="{{$st_player->name}}" data-team-logo="{{$st_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
 
-                                            <td class="match-position">
-                                                <p>12</p>
+                                            <td class="player-dp">
+                                               {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                            </td>
+                                            <td>
+                                             <h6>{{ $st_player->name }}</h6>
+                                             {{-- <span>sel by 0.38%</span> --}}
+                                          </td>
+                                          <td class="team-logo">
+                                              <img src="{{$st_player->team_logo}}" alt="team-logo-2">
+                                          </td>
+                                            <td>
+                                               <p>{{$st_player->age}}</p>
                                             </td>
                                             <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
+                                               <span>{{ ($st_player->injured == '1') ?
+                                             'Yes' : 'No'}}</span>
+                                               <button class="plus player-toggle" data-event="plus">
+                                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                               </button>
+                                               <button class="minus player-toggle d-none" data-event="minus">
+                                                  <i class="fa fa-minus" aria-hidden="true"></i>
+                                               </button>
                                             </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner9"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>07</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner10"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>67</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner11"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner12"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>37</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner13"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Gaspard Xavier</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner14"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>17</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-
-
+                                         </tr>
+                                         @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -464,175 +183,34 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
 
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner15"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>12</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
+                                        <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
+                                           <td class="player-dp">
+                                              {{-- <img src="assets/images/dp.png" alt="dp"> --}}
+                                           </td>
+                                           <td>
+                                            <h6>{{ $gk_player->name }}</h6>
+                                            {{-- <span>sel by 0.38%</span> --}}
+                                         </td>
+                                         <td class="team-logo">
+                                             <img src="{{$gk_player->team_logo}}" alt="team-logo-2">
+                                         </td>
+                                           <td>
+                                              <p>{{$gk_player->age}}</p>
+                                           </td>
+                                           <td class="credits_points">
+                                              <span>{{ ($gk_player->injured == '1') ?
+                                            'Yes' : 'No'}}</span>
+                                              <button class="plus player-toggle" data-event="plus">
+                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                              </button>
+                                              <button class="minus player-toggle d-none" data-event="minus">
+                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                              </button>
+                                           </td>
                                         </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner16"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>07</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner17"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>67</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner18"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner19"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>37</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner20"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>57</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                            <td class="player-name">
-                                                <p>Mattéo Desgouillons</p>
-                                            </td>
-                                            <td class="match-team-logo">
-                                                <a href="">
-                                                    <div class="match-team-logo-inner match-team-logo-inner21"></div>
-                                                </a>
-                                            </td>
-
-                                            <td class="match-position">
-                                                <p>17</p>
-                                            </td>
-                                            <td class="credits_points">
-                                                <span>No</span>
-                                                <button class="plus player-toggle" data-event="plus">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                                </button>
-                                            </td>
-                                        </tr>
-
+                                        @endforeach
 
                                     </tbody>
                                 </table>
@@ -653,3 +231,130 @@
     </section>
     <!-- Leagues Content Section End -->
 @endsection
+
+@section('custom-script')
+
+  <script>
+   $(document).ready(function() {
+
+      var myTeam = @json(Session::get('myTeam', []));
+
+      $('.div-tbl tbody tr').each(function() {
+         var row = $(this);
+         var leagueId = "{{$matchDetails->league->league_id}}";
+
+         // console.log(leagueId,'league_id');
+         // console.log(myTeam,'myjson');
+
+         var teamId = row.data('team-id');
+         var playerId = row.data('player-id');
+         var playerRole = row.data('player-role');
+         var playerName = row.data('player-name');
+
+         var playerExists = myTeam.some(function(player) {
+            return player.team_id == teamId && player.player_id == playerId && player.player_role == playerRole && player.player_name == playerName && player.league_id == leagueId;
+         });
+
+         if (playerExists) {
+            row.find('.plus').addClass('d-none');
+            row.find('.minus').removeClass('d-none');
+         } else {
+            row.find('.plus').removeClass('d-none');
+            row.find('.minus').addClass('d-none');
+         }
+      });
+
+      $('.next-btn').click(function(e) {
+        e.preventDefault();
+
+        var nextBtn = $(this);
+
+        $.get("{{ route('current-team-count') }}", function(data, status) {
+            if (data.success == true && data.count != 11) {
+                $("#error-message").html('Your team must have exactly 11 players.');
+                $("#errorModal2").modal('show');
+            } else {
+                window.location.href = nextBtn.attr('href');
+            }
+        });
+      });
+
+       $.ajaxSetup({
+           headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+           }
+       });
+
+       $(document).on('click', '.player-toggle', function() {
+
+         var team_id = $(this).closest('tr').data('team-id');
+         var player_id = $(this).closest('tr').data('player-id');
+         var player_role = $(this).closest('tr').data('player-role');
+         var leagueId = "{{$matchDetails->league->league_id}}";
+         var player_name = $(this).closest('tr').data('player-name');
+         var team_logo = $(this).closest('tr').data('team-logo');
+         var match_id = $(this).closest('tr').data('match-id');
+         var team_name = $(this).closest('tr').data('team-name');
+         var homeTeamId = $(this).closest('tr').data('home-team');
+         var awayTeamId = $(this).closest('tr').data('away-team');
+         var dbMatchId = $(this).closest('tr').data('slug-matchid');
+
+         var button = $(this); // Store reference to the clicked button
+         var isPlus = button.hasClass('plus'); // Check if the clicked button is a "plus" button
+         var event = $(this).data('event');
+         var formData = {
+               team_id: team_id,
+               player_id: player_id,
+               player_role: player_role,
+               leagueId: leagueId,
+               player_name: player_name,
+               event : event,
+               team_logo : team_logo,
+               match_id:match_id,
+               team_name:team_name,
+               homeTeamId:homeTeamId,
+               awayTeamId:awayTeamId,
+               dbMatchId:dbMatchId,
+         };
+
+         $.ajaxSetup({
+            headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+         });
+
+         $.ajax({
+            url: "{{ route('create-team') }}",
+            type: 'POST',
+            data: formData,
+            success: function(response) {
+                  if(response.success == true){
+                     if (isPlus) {
+                        button.addClass('d-none');
+                        button.closest('td').find('.minus').removeClass('d-none');
+                        button.parent('td').parent('tr').addClass('select-player');
+                     } else {
+                        button.addClass('d-none');
+                        button.closest('td').find('.plus').removeClass('d-none');
+                        button.parent('td').parent('tr').removeClass('select-player');
+
+                     }
+                  } else {
+                    $("#error-message").html(response.message);
+                    $("#errorModal2").modal('show');
+
+                  }
+            },
+            error: function(xhr, status, error) {
+                  console.error('Error:', error);
+            }
+         });
+      });
+
+
+
+   });
+</script>
+
+
+  @endsection
