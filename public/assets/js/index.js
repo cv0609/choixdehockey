@@ -92,9 +92,27 @@ $('.tab').on('click', function (evt) {
 });
 
 
-$(".profile").click(function(){
-  $(this).find(".dropdown").slideToggle();
+
+
+
+
+
+document.getElementById("avatar-content").addEventListener("click", function(event) {
+
+  event.stopPropagation();
+
+
+  var dropdown = document.getElementById("dropdown");
+  dropdown.style.display = (dropdown.style.display === "block" ? "none" : "block");
 });
 
 
+document.addEventListener("click", function(event) {
+  var dropdown = document.getElementById("dropdown");
+  var avatarContent = document.getElementById("avatar-content");
 
+
+  if (!avatarContent.contains(event.target) && !dropdown.contains(event.target)) {
+      dropdown.style.display = "none";
+  }
+});

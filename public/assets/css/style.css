@@ -223,6 +223,7 @@ img {
 
 .navbar-menu {
     display: flex;
+    position: relative;
 }
 
 
@@ -359,8 +360,9 @@ img {
 }
 
 .banner-right {
-    background-image: url(../images/banner-image.jpg);
+    background-image: url(../images/banner-image.png);
     height: 600px;
+    border-radius: 20px;
 }
 
 .home-banner-text h2 {
@@ -404,13 +406,15 @@ img {
 }
 
 .home-info-wrap-second-img2 {
-    background-image: url(../images/home-about-info-bg-upper.png);
+    background-image: url(../images/home-about-info-bg-upper.jpg);
     height: 370px;
     width: 370px;
     position: relative;
     z-index: 555;
     border-radius: 50%;
     margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* About Info CSS End */
@@ -429,14 +433,14 @@ img {
 }
 
 .home-choices-cards-image2 {
-    background-image: url("../images/choices-cards-image1.jpg");
+    background-image: url("../images/choices-cards-image2.png");
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
 .home-choices-cards-image3 {
-    background-image: url("../images/choices-cards-image1.jpg");
+    background-image: url("../images/choices-cards-image3.jpg");
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -511,7 +515,7 @@ img {
 
 /* lknfbnf */
 .home-why-hockey-section {
-    background-image: url("../images/home-why-hockey-bg.jpg");
+    background-image: url("../images/home-why-hockey-bg.png");
     padding: 300px 0 100px 0;
     background-color: rgba(0 0 0/70%);
     background-blend-mode: multiply;
@@ -1177,6 +1181,8 @@ img {
     min-width: 1000px;
     margin: 0 auto;
     background: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .ice-leagues img.table-img.me-2 {
@@ -1195,7 +1201,9 @@ img {
     font-size: 15px;
     vertical-align: middle;
 }
-
+.ice-leagues tbody tr td{
+    padding: 0;
+}
 .ice-leagues thead tr th {
     padding: 20px 30px;
     color: #29292a;
@@ -1943,7 +1951,9 @@ td.match-team-logo a {
 }
 
 
-
+#dropdown {
+    display: none;
+}
 .avatar-content img {
     width: 45px;
     aspect-ratio: 1;
@@ -1954,12 +1964,13 @@ td.match-team-logo a {
     position: absolute;
     background: #fff;
     padding: 10px;
-    width: max-content;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    left: 0;
+    right: 0;
     top: 110%;
     display: none;
+    max-width: 200px;
 }
 .profile-image{
     width: 40px;
@@ -1971,7 +1982,6 @@ td.match-team-logo a {
     border-radius: 50%;
 }
 .profile {
-    position: relative;
     margin-left: 30px;
 }
 
@@ -2766,3 +2776,49 @@ fieldset {
 }
 
 /* Modal  CSS End */
+
+div#myTable_length {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 135px;
+}
+div#myTable_filter {
+    display: inline-block;
+    float: right;
+    margin-right: 135px;
+}
+div#myTable_length label ,div#myTable_filter label{
+    color:#fff
+}
+.league-page .sorting.sorting_asc {
+    width: 50px !important;
+}
+div#myTable_info {
+    display: inline-block;
+    margin-top: 30px;
+    color:#fff;
+    margin-left:135px;
+}
+div#myTable_paginate {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+    margin-right:135px;
+}
+#myTable_previous {
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#myTable_next {
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.paginate_button.current {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+}

@@ -1,3 +1,13 @@
+
+@media screen and (max-width:1300px) {
+    div#myTable_length {
+        margin-left: 90px;
+    }
+    div#myTable_filter {
+        margin-right: 90px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .navbar-menu {
         position: fixed;
@@ -30,7 +40,9 @@
         display: block;
     }
 
-  
+    .avatar-content {
+        justify-content: center;
+    }
 
     .close-btn {
         position: absolute;
@@ -95,6 +107,21 @@
     }
     .footer-pages .banner-text h1 {
         font-size: 43px;
+    }
+    div#myTable_length {
+        margin-left: 90px;
+    }
+    div#myTable_filter {
+        margin-right: 90px;
+    }
+
+}
+@media screen and (max-width:1100px) {
+    div#myTable_length {
+        margin-left: 30px;
+    }
+    div#myTable_filter {
+        margin-right: 30px;
     }
 }
 
@@ -222,6 +249,21 @@
     .footer-pages-content-grp h3 {
         font-size: 27px;
     }
+
+    /* tables css start */
+    div#myTable_length {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    div#myTable_filter {
+        display: block;
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -611,6 +653,19 @@
     .footer-pages-content-grp h3 {
         font-size: 21px;
     }
+        /* tables css start */
+        .leagues-table td {
+            padding: 18px 18px !important;
+        }
+        .ice-leagues thead tr th {
+            padding: 18px 18px;
+        }
+        .leagues-table td h6 {
+            font-size: 14px;
+        }
+        /* tables css end*/
+
+
 }
 
 
@@ -767,7 +822,7 @@
         font-size: 20px;
         line-height: 1.4;
     }
-    .card_title h1 {
+    .card_title h2 {
         font-size: 22px;
     }
     #contact button[type="submit"] {
@@ -780,5 +835,17 @@
     .footer-pages-content-grp h3 {
         font-size: 18px;
     }
+
+        /* tables css start */
+        .leagues-table td {
+            padding: 15px 15px !important;
+        }
+        .ice-leagues thead tr th {
+            padding: 15px 15px;
+        }
+        .leagues-table td h6 {
+            font-size: 14px;
+        }
+        /* tables css end*/
 
 }
