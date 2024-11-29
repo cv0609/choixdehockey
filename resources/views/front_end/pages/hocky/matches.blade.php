@@ -7,7 +7,7 @@
                 <ul class="leagues-ul">
                     <li class="inline-list home-list">
                         <h3>
-                            <a href="./">Page D'accueil</a>
+                            <a href="{{ route('home') }}">Page D'accueil</a>
                         </h3>
                     </li>
                     <li class="inline-list next-page-list">
@@ -26,7 +26,7 @@
         <div class="container">
             <div class="ice-leagues-inner">
                 <div class="back-btn">
-                    <a href="leagues">
+                    <a href="{{ route('leagues') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#000">
                             <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"></path>
@@ -61,7 +61,7 @@
                                         </div>
                                         <h6>{{ $matche->home_team_name }}</h6>
                                         @if($matche->short_status == 'LIVE' || $matche->short_status == '1H' || $matche->short_status == 'HT' || $matche->short_status == '2H' || $matche->short_status == 'ET' || $matche->short_status == 'BT' || $matche->short_status == 'P' || $matche->short_status == 'SUSP' || $matche->short_status == 'INT' || $matche->short_status == 'INT')
-      
+
                                             <div id="Head-Banner">
                                                 <span id="Head-Banner-Text">LIVE ({{ $matche->long_status }})</span>
                                             </div>
@@ -87,7 +87,7 @@
                                             <!-- <span>NHL</span> -->
                                             <img src="{{$matche->away_team_logo}}" alt="team-logo-3">
                                         </div>
-                                        
+
                                          <h6>{{ $matche->away_team_name }}</h6>
                                     </td>
 
