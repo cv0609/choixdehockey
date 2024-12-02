@@ -13,7 +13,7 @@
                     <div class="profile-sec">
                         <div class="user-img">
                         <div class="update_img_user">  
-                        <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.jpg') }}" alt="dp">                             
+                             <img src="{{(!empty(Auth::user()->image)) ? asset(Auth::user()->image) : asset('assets/images/dummy.jpg') }}" alt="dp">                             
                                 <form id="profile-pic-form" action="{{ route('profile.update-pic') }}" method="POST" enctype="multipart/form-data">
                                    @csrf
                                    <input type="file" id="profile-pic-input" name="profile_picture" style="display: none;" accept="image/*" onchange="document.getElementById('profile-pic-form').submit()">                              
@@ -71,7 +71,7 @@
                                         <button type="submit" class="btn btn-primary">Mise à jour</button>
 
                                         <div class="reset-password">
-                                            <a href="change-password"> Réinitialiser le mot de passe </a>
+                                            <a href="{{route('profile.profile')}}"> Modifier le profil.</a>
                                         </div>
 
                                     </form>
