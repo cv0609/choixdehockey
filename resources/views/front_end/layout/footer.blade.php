@@ -99,7 +99,7 @@
                             <h1>S'inscrire</h1>
                         </div>
                         <div class="form">
-                        <div id="responseMessage"></div>
+                        <div id="responseMessage_login"></div>
                         <form id="registerForm" method="post">
                             <input type="text" name="name" id="name" placeholder="Entrez votre nom" />
                             <input type="text" name="username" id="username" placeholder="Choisissez votre nom d'utilisateur" />
@@ -181,18 +181,18 @@
                 },
                 success: function (response) {
                     if (response.success) {
-                        $('#responseMessage').html('<p style="color: green;">' + response.message + '</p>');
+                        $('#responseMessage_login').html('<p style="color: green;">' + response.message + '</p>');
                         // Optionally redirect
                         setTimeout(function () {
                             window.location.reload();
                         }, 2000); // 2-second delay
                     } else {
-                        $('#responseMessage').html('<p style="color: red;">' + response.message + '</p>');
+                        $('#responseMessage_login').html('<p style="color: red;">' + response.message + '</p>');
                     }
                 },
                 error: function (xhr) {
                     let errorMessage = xhr.responseJSON.message || 'An error occurred.';
-                    $('#responseMessage').html('<p style="color: red;">' + errorMessage + '</p>');
+                    $('#responseMessage_login').html('<p style="color: red;">' + errorMessage + '</p>');
                 }
             });
         });
