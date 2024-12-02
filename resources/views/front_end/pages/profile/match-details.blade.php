@@ -6,32 +6,33 @@ $PointCalculationService = app(App\Services\PointCalculationService::class);
 use Carbon\Carbon;
 @endphp
 
-<section class="ice-leagues">
-        <div class="container">
-            <div class="ice-leagues-inner">
-                <div class="back-btn">
-                    <a href="{{ route('profile.matches') }}" class="back-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#fff">
-                            <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z" />
-                        </svg>
-                    </a>
-                </div>
-                <!-- Component Start -->
-                <h1 class="font-medium">
-                    My players
-                </h1>
-                <div class="flex flex-col mt-6">
-                    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                        <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                            <div class="palyer-header">
-                                <div class="team-logo">
-                                    <img src="https://media.api-sports.io/hockey/teams/504.png" alt="team-logo-4">
-
-                                    <h6>{{ $matchDetails->home_team_name ?? '' }}</h6>
-                                </div>
-                                <div class="match-details">
-                                <h6>{{ $matchDetails->venue_name ?? '' }}</h6>
+   <!--====sign up section start====-->
+<section class="premier_bg premier_players ice-leagues match-details">
+         <div class="container">
+            <div class="ice-leagues-inner leagure_container">
+               <div class="flex flex-col items-center justify-center w-screen min-h-screen bg-gray-900 py-10">                  
+                  <a href="{{ route('profile.matches') }}" class="back-btn">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                        <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/>
+                     </svg>
+                  </a>
+                  <!-- Component Start -->
+                  <h1 class="font-medium">
+                     My players
+                  </h1>
+                  <div class="flex flex-col mt-6">
+                     <div
+                        class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div
+                           class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                           <div class="palyer-header">
+                              <div class="team-logo">
+                                 <img src="{{ $matchDetails->home_team_logo ?? '' }}" alt="team-logo-4">
+                                 {{-- <span>SHL</span> --}}
+                                 <h6>{{ $matchDetails->home_team_name ?? '' }}</h6>
+                              </div>
+                              <div class="match-details">
+                                 <h6>{{ $matchDetails->venue_name ?? '' }}</h6>
                                  <p>{{ $matchDetails->venue_city ?? ''}}</p>
                                  <span>{{ date('Y-m-d h:i a', strtotime($matchDetails->fixture_date ?? '')) }}</span>
                                 </div>
