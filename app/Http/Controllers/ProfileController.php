@@ -30,7 +30,7 @@ class ProfileController extends Controller
 
     public function updateProfile(UpdateProfile $request)
     {
-       $user = ["name"=>$request->input('name'),"lname"=>$request->input('lname'),"email"=>$request->input('email'),"phone"=>$request->input('phone')];
+       $user = ["name"=>$request->input('name'),"username"=>$request->input('username'),"email"=>$request->input('email')];
        User::where(['id'=>Auth::user()->id])->update($user);
        return redirect()->route('profile.profile')->with('success','Profile updated successfully');
     }
