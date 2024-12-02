@@ -444,8 +444,9 @@
     .footer-pages-content-grp h3 {
         font-size: 24px;
     }
-    .profile-side,.col-sec {
+    .profile-side, .col-sec {
         width: 100%;
+        height: auto;
     }
     .user-content-box button {
         margin-left: 0;
