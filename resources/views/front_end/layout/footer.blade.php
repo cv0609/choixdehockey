@@ -180,13 +180,14 @@
                     _token: "{{ csrf_token() }}" // CSRF token for Laravel
                 },
                 success: function (response) {
-                    console.log(response); return fasle;
+                    
                     if (response.success) {
-                        $('#responseMessage_login').html('<p style="color: green;">' + response.message + '</p>');
-                        // Optionally redirect
-                        setTimeout(function () {
-                            window.location.reload();
-                        }, 2000); // 2-second delay
+                        window.location.href = response.url;
+                        // $('#responseMessage_login').html('<p style="color: green;">' + response.message + '</p>');
+                        // // Optionally redirect
+                        // setTimeout(function () {
+                        //     window.location.reload();
+                        // }, 2000); // 2-second delay
                     } else {
                         $('#responseMessage_login').html('<p style="color: red;">' + response.message + '</p>');
                     }

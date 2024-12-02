@@ -236,32 +236,32 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($organizedPlayers['Goalkeeper'] as $gk_player)
+                                        @foreach ($organizedPlayers['Midfielder'] as $mid_player)
 
-                                        <tr class="matche-main" data-team-id="{{$gk_player->player_team_id}}" data-player-id="{{$gk_player->player_id}}" data-player-role="G" data-player-name="{{$gk_player->name}}" data-team-logo="{{$gk_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
+                                        <tr lass="matche-main" data-team-id="{{$mid_player->player_team_id}}" data-player-id="{{$mid_player->player_id}}" data-player-role="M" data-player-name="{{$mid_player->name}}" data-team-logo="{{$mid_player->team_logo}}" data-match-id="{{$matchDetails->fixture_id}}" data-team-name="testing" data-home-team="{{ $matchDetails->home_team_id }}" data-away-team="{{ $matchDetails->away_team_id }}" data-slug-matchid="{{ $matchDetails->id }}">
                                            <!-- <td class="player-dp">
                                               {{-- <img src="assets/images/dp.png" alt="dp"> --}}
                                            </td> -->
                                            <td>
-                                            <h6>{{ $gk_player->name }}</h6>
+                                           <h6>{{ $mid_player->name ?? '' }}</h6>
                                             {{-- <span>sel by 0.38%</span> --}}
                                          </td>
                                          <td class="team-logo">
-                                             <img src="{{$gk_player->team_logo}}" alt="team-logo-2">
+                                         <img src="{{$mid_player->team_logo ?? ''}}" alt="team-logo-2">
                                          </td>
                                            <td>
-                                              <p>{{$gk_player->age}}</p>
+                                           <p>{{$mid_player->age ?? ''}}</p>
                                            </td>
                                            <td class="credits_points">
-                                              <span>{{ ($gk_player->injured == '1') ?
-                                            'Yes' : 'No'}}</span>
-                                              <button class="plus player-toggle" data-event="plus">                                        
-                                                 <i class="fa-solid fa-plus"></i>
-                                              </button>
-                                              <button class="minus player-toggle d-none" data-event="minus">
-                                              <i class="fa-solid fa-minus"></i>
-                                              </button>
-                                           </td>
+                                             <span>{{ ($mid_player->injured  == '1') ?
+                                          'Yes' : 'No'}}</span>
+                                             <button class="plus player-toggle" data-event="plus">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                             </button>
+                                             <button class="minus player-toggle d-none" data-event="minus">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                             </button>
+                                          </td>
                                         </tr>
                                         @endforeach
 
@@ -269,7 +269,7 @@
                                 </table>
                             </div>
                             <div class="team-btns">
-                                <a href="team-view" class="next-btn">next</a>
+                                <a href="{{ route('my-team') }}" class="next-btn">next</a>
                             </div>
                         </div>
                     </div>

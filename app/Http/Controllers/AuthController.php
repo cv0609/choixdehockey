@@ -28,10 +28,10 @@ class AuthController extends Controller
             if(Session::has('myTeam')){
               $res =  ["success"=>true,"url"=>route('my-team')] ;
             }else{
-                $res = ["success"=>true,"url"=>route('/')];
+                $res = ["success"=>true,"url"=>route('home')];
             }  
         }else{
-            $res =  ["success"=>false,"error"=>"Please enter valid email or password"];
+            $res =  ["success"=>false,"message"=>"Please enter valid email or password"];
         }
         return $res;
     }
