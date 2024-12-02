@@ -22,16 +22,18 @@ class AuthController extends Controller
 
     public function loginPost(LoginRequest $request)
     {
+        $res = [];
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
 
             if(Session::has('myTeam')){
-              return redirect()->route('my-team');
+              $res =  ["success"=>true,"url"=>route('my-team')] ;
             }else{
-              return redirect('/');
+                $res = ["success"=>true,"url"=>route('/')];
             }  
         }else{
-            return redirect()->back()->with('error','Please enter valid email or password');
+            $res =  ["success"=>false,"error"=>"Please enter valid email or password"];
         }
+        return $res;
     }
 
     public function signUpPost(RegisterRequest $request)

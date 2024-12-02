@@ -180,7 +180,7 @@
                     _token: "{{ csrf_token() }}" // CSRF token for Laravel
                 },
                 success: function (response) {
-                    
+                    console.log(response);
                     if (response.success) {
                         $('#responseMessage_login').html('<p style="color: green;">' + response.message + '</p>');
                         // Optionally redirect
