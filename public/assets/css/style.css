@@ -1863,6 +1863,7 @@ table tr {
     border-top-right-radius: 14px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .matche-det table {
@@ -1900,6 +1901,8 @@ table tr {
     font-size: 18px;
     padding: 10px 30px;
     font-weight: 600;
+    width: 25%;
+    text-align: center;
 }
 
 .credits_points button {
@@ -2773,6 +2776,7 @@ fieldset {
 
 .modal-body {
     margin: 0 auto;
+    text-align: center;
 }
 
 /* Modal  CSS End */
@@ -2979,10 +2983,13 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 
 .modal-body span svg {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin: 10px  auto 30px;
     text-align: center;
+}
+.modal-footer {
+    justify-content: center !important;
 }
 
 /* Modal CSS End */

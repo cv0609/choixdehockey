@@ -4,7 +4,8 @@
     <meta name="robots" content="index, follow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/fontawsome/fontawsome.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/fontawsome/fontawsome1.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/fontawsome/fontawsome.css')}}">   
     <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">

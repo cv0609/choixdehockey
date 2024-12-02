@@ -105,7 +105,7 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">                                        
-                                              <img src="{{$def_player->team_logo}}" alt="minus-logo">
+                                              <i class="fa-solid fa-minus"></i>
                                               </button>
                                            </td>
                                         </tr>
@@ -157,10 +157,7 @@
                                                   <i class="fa fa-plus" aria-hidden="true"></i>
                                                </button>
                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                  <img src="{{$def_player->team_logo}}" alt="minus-logo">
-
-
-
+                                            <i class="fa-solid fa-minus"></i>
                                                </button>
                                             </td>
                                          </tr>
@@ -210,10 +207,7 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                                 <img src="{{$def_player->team_logo}}" alt="minus-logo">
-
-
-
+                                              <i class="fa-solid fa-minus"></i>
                                               </button>
                                            </td>
                                         </tr>
@@ -265,10 +259,7 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                                 <img src="{{$def_player->team_logo}}" alt="minus-logo">
-
-
-
+                                             <i class="fa-solid fa-minus"></i>
                                               </button>
                                            </td>
                                         </tr>

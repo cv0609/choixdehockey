@@ -444,6 +444,15 @@
     .footer-pages-content-grp h3 {
         font-size: 24px;
     }
+    .profile-side,.col-sec {
+        width: 100%;
+    }
+    .user-content-box button {
+        margin-left: 0;
+    }
+    .reset-password {
+        margin-left: 0;
+    }
 
 }
 
