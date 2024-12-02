@@ -269,7 +269,7 @@
                                 </table>
                             </div>
                             <div class="team-btns">
-                                <a href="team-view" class="next-btn">next</a>
+                                <a href="{{ route('my-team') }}" class="next-btn">next</a>
                             </div>
                         </div>
                     </div>
