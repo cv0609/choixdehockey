@@ -25,8 +25,6 @@
 
     <section class="ice-leagues match-details">
         <div class="container">
-
-
             <div class="ice-leagues-inner">
                 <div class="back-btn">
                     <a href="{{ route('leagueMatches',['leagueId'=>$matchDetails->league_id]) }}">
@@ -114,9 +112,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="team-btns">
+                            <!-- <div class="team-btns">
                                 <a href="team-view" class="next-btn">Suivant</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -165,9 +163,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="team-btns">
+                            <!-- <div class="team-btns">
                                 <a href="team-view" class="next-btn">next</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -216,9 +214,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="team-btns">
+                            <!-- <div class="team-btns">
                                 <a href="team-view" class="next-btn">next</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -268,15 +266,15 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="team-btns">
-                                <a href="{{ route('my-team') }}" class="next-btn">next</a>
-                            </div>
+                        
                         </div>
                     </div>
-
-
-
                 </div>
+
+                             <div class="team-btns">
+                                <a href="{{ route('my-team') }}" class="next-btn">next</a>
+                            </div>
+
 
             </div>
         </div>

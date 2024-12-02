@@ -98,7 +98,7 @@
                                         <button type="submit" class="btn btn-primary">Mise à jour</button>
 
                                         <div class="reset-password">
-                                            <a href="#"> Réinitialiser le mot de passe </a>
+                                            <a href="{{ route('profile.change.password') }}"> Réinitialiser le mot de passe </a>
                                         </div>
 
                                     </form>
