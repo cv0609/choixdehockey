@@ -105,7 +105,10 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                                 <i class="fa-solid fa-minus"></i> <!-- This will render the minus icon -->
+
+
+
                                               </button>
                                            </td>
                                         </tr>
@@ -157,7 +160,10 @@
                                                   <i class="fa fa-plus" aria-hidden="true"></i>
                                                </button>
                                                <button class="minus player-toggle d-none" data-event="minus">
-                                                  <i class="fa fa-minus" aria-hidden="true"></i>
+                                                  <i class="fa-solid fa-minus"></i> <!-- This will render the minus icon -->
+
+
+
                                                </button>
                                             </td>
                                          </tr>
@@ -207,7 +213,10 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                                 <i class="fa-solid fa-minus"></i> <!-- This will render the minus icon -->
+
+
+
                                               </button>
                                            </td>
                                         </tr>
@@ -259,7 +268,10 @@
                                                  <i class="fa fa-plus" aria-hidden="true"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                                 <i class="fa fa-minus" aria-hidden="true"></i>
+                                                 <i class="fa-solid fa-minus"></i> <!-- This will render the minus icon -->
+
+
+
                                               </button>
                                            </td>
                                         </tr>
