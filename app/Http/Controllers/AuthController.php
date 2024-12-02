@@ -31,7 +31,7 @@ class AuthController extends Controller
                 $res = ["success"=>true,"url"=>route('home')];
             }  
         }else{
-            $res =  ["success"=>false,"error"=>"Please enter valid email or password"];
+            $res =  ["success"=>false,"message"=>"Please enter valid email or password"];
         }
         return $res;
     }
