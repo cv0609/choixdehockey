@@ -2986,3 +2986,10 @@ body.modal-open .custom-modal .custom-modal-dialog {
 }
 
 /* Modal CSS End */
+.content-bar a {
+    display: inline-block;
+    color: #000;
+    background-color: #fafb63;
+    padding: 10px;
+    border-radius: 10px;
+}
