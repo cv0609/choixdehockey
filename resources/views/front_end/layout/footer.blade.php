@@ -223,7 +223,7 @@
                     if (response.success) {
                         $('#responseMessage').html('<p style="color: green;">' + response.message + '</p>');
                         // Optionally redirect to another page
-                        window.location.href = "/dashboard";
+                        window.location.href = "{{ route('home') }}";
                     } else {
                         $('#responseMessage').html('<p style="color: red;">' + response.message + '</p>');
                     }

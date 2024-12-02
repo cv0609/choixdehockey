@@ -57,8 +57,8 @@ class AuthController extends Controller
 
         //     Mail::to($request->input('email'))->send(new UserRegisterMail($user));
         // }
-
-        return redirect()->back()->with('success','You are sign up successfully!');
+          return ['success'=>true];
+        //return redirect()->back()->with('success','You are sign up successfully!');
     }
 
     public function logout()
