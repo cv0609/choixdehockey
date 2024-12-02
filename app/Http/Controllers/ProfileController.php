@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\UpdateProfile;
-use App\Http\Requests\updatePassword;
+use App\Http\Requests\UpdatePassword;
 use App\Services\ApiHockyService;
 use App\Models\User;
 use App\Models\Team;
