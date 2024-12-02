@@ -3039,3 +3039,19 @@ body.modal-open .custom-modal .custom-modal-dialog {
     margin-bottom: 10px;
     color: #000;
 }
+.ice-leagues tbody tr td p {
+    color: #000;
+    font-weight: 600;
+}
+.paginate_button {
+    padding: 5px 15px;
+    color: #fff;
+}
+td.player-name p {
+    color: #000;
+    font-weight: 600;
+}
+.ice-leagues tbody tr td p {
+    color: #000;
+    font-size: 17px;
+}
