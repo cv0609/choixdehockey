@@ -7,7 +7,7 @@
 @endphp
 
    <!--====sign up section start====-->
-<section class="premier_bg premier_players ice-leagues ">
+<section class="premier_bg premier_players ice-leagues match-details">
          <div class="container">
             <div class="ice-leagues-inner leagure_container">
                <div class="flex flex-col items-center justify-center w-screen min-h-screen bg-gray-900 py-10">                  
