@@ -1270,6 +1270,9 @@ img {
     font-size: 30px;
     margin-bottom: 50px;
 }
+.match-details table tr td p {
+    color: #000;
+}
 
 .back-btn a {
     display: inline-block;
