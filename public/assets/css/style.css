@@ -1200,6 +1200,7 @@ img {
     color: #29292a;
     font-size: 15px;
     vertical-align: middle;
+    position: relative;
 }
 .ice-leagues tbody tr td{
     padding: 0;
