@@ -1201,9 +1201,11 @@ img {
     font-size: 15px;
     vertical-align: middle;
     position: relative;
+
 }
 .ice-leagues tbody tr td{
     padding: 0;
+    cursor: pointer;
 }
 .ice-leagues thead tr th {
     padding: 20px 30px;
@@ -1269,6 +1271,9 @@ img {
     text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
+}
+.match-details table tr td p {
+    color: #000;
 }
 
 .back-btn a {
@@ -3035,4 +3040,44 @@ body.modal-open .custom-modal .custom-modal-dialog {
     font-size: 15px;
     margin-bottom: 10px;
     color: #000;
+}
+.ice-leagues tbody tr td p {
+    color: #000;
+    font-weight: 600;
+}
+.paginate_button {
+    padding: 5px 15px;
+    color: #fff;
+}
+td.player-name p {
+    color: #000;
+    font-weight: 600;
+}
+.ice-leagues tbody tr td p {
+    color: #000;
+    font-size: 17px;
+}
+.palyer-header::after {
+    background: #fafb63;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    border-radius: 14px;
+}
+.palyer-header .team-logo h6 {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+.palyer-header .match-details span {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.match-details .flex{
+    justify-content: center !important;
 }
