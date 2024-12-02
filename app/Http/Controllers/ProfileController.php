@@ -74,7 +74,7 @@ class ProfileController extends Controller
         $teams = Team::whereHas('teamDetails', function($query) use ($userId) {
             $query->where('user_id', $userId);
         })->get();
-
+        
         $matches = [];
 
         if($teams->isNotEmpty()){
