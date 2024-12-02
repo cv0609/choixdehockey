@@ -1200,8 +1200,6 @@ img {
     color: #29292a;
     font-size: 15px;
     vertical-align: middle;
-    position: relative;
-
 }
 .ice-leagues tbody tr td{
     padding: 0;
@@ -3080,4 +3078,28 @@ td.player-name p {
 }
 .match-details .flex{
     justify-content: center !important;
+}
+
+.my-team-page .team-view-table td p {
+    position: relative;
+}
+
+.my-team-page .player-toggle {
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    border-color: #00c900 !important;
+}
+.font-medium {
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
 }
