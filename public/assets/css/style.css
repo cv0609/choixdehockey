@@ -3000,3 +3000,10 @@ body.modal-open .custom-modal .custom-modal-dialog {
     padding: 10px;
     border-radius: 10px;
 }
+.modal-footer button {
+    background-color: #fafb63;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #000;
+}
