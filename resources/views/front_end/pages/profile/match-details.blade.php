@@ -28,18 +28,18 @@ use Carbon\Carbon;
                                 <div class="team-logo">
                                     <img src="https://media.api-sports.io/hockey/teams/504.png" alt="team-logo-4">
 
-                                    <h6>Acroni Jesenice</h6>
+                                    <h6>{{ $matchDetails->home_team_name ?? '' }}</h6>
                                 </div>
                                 <div class="match-details">
-                                    <h6></h6>
-                                    <p></p>
-                                    <span>2024-09-26 05:00 pm</span>
+                                <h6>{{ $matchDetails->venue_name ?? '' }}</h6>
+                                 <p>{{ $matchDetails->venue_city ?? ''}}</p>
+                                 <span>{{ date('Y-m-d h:i a', strtotime($matchDetails->fixture_date ?? '')) }}</span>
                                 </div>
 
                                 <div class="team-logo">
 
-                                    <img src="https://media.api-sports.io/hockey/teams/1453.png" alt="team-logo-2">
-                                    <h6>KHL Sisak</h6>
+                                    <img src="{{ $matchDetails->away_team_logo ?? '' }}" alt="team-logo-2">
+                                    <h6>{{ $matchDetails->away_team_name ?? '' }}</h6>
                                 </div>
                             </div>
 
@@ -55,172 +55,27 @@ use Carbon\Carbon;
                                             </tr>
                                         </thead>
                                         <tbody>
-
+                                        @foreach ($teams[0]->teamDetails ?? [] as $data)
+                                       @php
+                                          $points = $PointCalculationService->getPlayerStatistics(Auth::user()->id,$matchId,$data->player_id);
+                                       @endphp
                                             <tr>
                                                 <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
+                                                    <img src="{{$data->player_team_logo}}"
                                                         alt="team-logo-3">
                                                 </td>
                                                 <td class="player-name">
-                                                    <p>M. Wyllie</p>
+                                                    <p>{{$data->player_name}}</p>
                                                 </td>
                                                 <td class="match-position">
-                                                    <p>F</p>
+                                                    <p>{{$data->player_pos}}</p>
                                                 </td>
                                                 <td class="match-score">
-                                                    <h6>0</h6>
+                                                    <h6>{{ $points }}</h6>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>G. Sykes</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>F</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>L. Taaffe</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>F</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>K. Wilkes</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>M</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>G. Soulya-Osekanongo</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>M</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>J. Okotcha</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>D</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>J. Richmond</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>D</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>E. Coker</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>D</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/4702.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>F. Rushton</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>G</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>K. Bailey</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>D</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="match-team-logo">
-                                                    <img src="https://media.api-sports.io/football/teams/7714.png"
-                                                        alt="team-logo-3">
-                                                </td>
-                                                <td class="player-name">
-                                                    <p>J. Adeoye</p>
-                                                </td>
-                                                <td class="match-position">
-                                                    <p>D</p>
-                                                </td>
-                                                <td class="match-score">
-                                                    <h6>0</h6>
-                                                </td>
-                                            </tr>
+                                       @endforeach
+                                           
 
                                         </tbody>
                                     </table>
