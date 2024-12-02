@@ -53,7 +53,7 @@
                                 @php
                                     $points = $PointCalculationService->calculatePoints(Auth::user()->id,$match->fixture_id);
                                 @endphp
-                                <tr class="matche-mainn" data-fixture-id="{{ $match->fixture_id ?? ''}}" data-league-id="{{ $match->league->league_id ?? ''}}">
+                                <tr class="matche-main" data-fixture-id="{{ $match->fixture_id ?? ''}}" data-league-id="{{ $match->league->league_id ?? ''}}">
                                     <td class="match-team-logo">
                                         <!-- <a href=""> -->
                                         <img src="{{ $match->home_team_logo ?? '' }}" alt="{{ $match->home_team_name ?? '' }} logo" alt="team-logo-3">
