@@ -54,6 +54,7 @@
                             <div class="tab-content tab-content-1 active">
                                 <div class="user-content-box">
                                     <form action="{{ route('profile.update') }}" method="POST" class="mt-60 ">
+                                        @csrf
                                         <div class="row">
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Prénom"
