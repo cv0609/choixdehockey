@@ -99,7 +99,7 @@
                             <h1>S'inscrire</h1>
                         </div>
                         <div class="form">
-                        <div id="responseMessage_login"></div>
+                        <div id="responseMessage"></div>
                         <form id="registerForm" method="post">
                             <input type="text" name="name" id="name" placeholder="Entrez votre nom" />
                             <input type="text" name="username" id="username" placeholder="Choisissez votre nom d'utilisateur" />
@@ -134,7 +134,7 @@
                         <div class="card_title">
                             <h1>Se connecter</h1>
                         </div>
-                         <div id="responseMessage"></div>
+                         <div id="responseMessage_login"></div>
                         <div class="form">
                             <form id="loginForm" method="post">
                                @csrf
