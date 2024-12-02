@@ -38,22 +38,29 @@
                         <div class="">
                             <div class="tab-content tab-content-1 active">
                                 <div class="user-content-box">
-                                    <form action="#" method="POST" class="mt-60 ">
+                                    <form action="{{ route('profile.update.password') }}" method="POST" class="mt-60 ">
+                                    @csrf
                                         <div class="row">
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Mot de passe actuel"
                                                     class="form-control para" id="name" required="required"
-                                                    autocomplete="off">
+                                                    autocomplete="off" name="current_password">
+                                                    @error("current_password")
+                                            <span class="text-danger">{{ $message }}</span>
+                                          @enderror
                                             </div>
                                             <div class="mb-3 col-sm-6">
                                                 <input type="text" placeholder="Nouveau mot de passe"
                                                     class="form-control para" id="last-name" required="required"
-                                                    autocomplete="off">
+                                                    autocomplete="off" name="new_password">
+                                                    @error("new_password")
+                                            <span class="text-danger">{{ $message }}</span>
+                                          @enderror
                                             </div>
                                             <div class="mb-3 col-sm-6">
                                                 <input type="email" placeholder="Confirmez le mot de passe"
                                                     class="form-control para" id="email" required="required"
-                                                    autocomplete="off">
+                                                    autocomplete="off" name="new_password_confirmation">
                                             </div>                                         
                                         </div>
                                         <button type="submit" class="btn btn-primary">Mise à jour</button>
