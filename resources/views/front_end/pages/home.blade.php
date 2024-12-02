@@ -247,12 +247,13 @@
                 <h3 data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="800">
                     Inscrivez-vous à notre newsletter quotidienne
                 </h3>
-
+                 <form action="">
                 <div class="newsletter-input-wrapper" data-aos="fade-up" data-aos-easing="ease-in-sine"
                     data-aos-duration="1100">
                     <input type="email" class="newsletter-input" placeholder="Entrez votre e-mail" required>
-                    <a href="javascript:void(0)" class="butn email-signup-submit-btn">S'inscrire</a>
+                    <a href="javascript:void(0)" type="submit" class="butn email-signup-submit-btn">S'inscrire</a>
                 </div>
+                </form>
             </div>
         </div>
     </section>
