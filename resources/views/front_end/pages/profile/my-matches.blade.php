@@ -49,6 +49,10 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach ($matches as $match)
+                                @php
+                                    $points = $PointCalculationService->calculatePoints(Auth::user()->id,$match->fixture_id);
+                                @endphp
                                 <tr>
                                     <td class="match-team-logo">
                                         <a href="">
@@ -74,156 +78,7 @@
 
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner3"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner4"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner5"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner6"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner7"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner8"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner9"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner10"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner11"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner12"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="match-team-logo">
-                                        <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner13"></div>
-                                            <h6>Ligue Magnus</h6>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
-                                    <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner14"></div>
-                                        <h6>National Hockey League</h6>
-                                    </td>
-                                    <td class="match-score">
-                                        <h4>0</h4>
-                                    </td>
-                                    <td class="match-status">
-                                        <p class="win">-- </p>
-
-                                    </td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
