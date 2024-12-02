@@ -102,10 +102,10 @@
                                               <span>{{ ($def_player->injured == '1') ?
                                             'Yes' : 'No'}}</span>
                                               <button class="plus player-toggle" data-event="plus">
-                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                                 <i class="fa-solid fa-plus"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">                                        
-                                              <i class="fa-solid fa-minus"></i>
+                                           <i class="fa-solid fa-minus"></i>
                                               </button>
                                            </td>
                                         </tr>
@@ -154,10 +154,10 @@
                                                <span>{{ ($st_player->injured == '1') ?
                                              'Yes' : 'No'}}</span>
                                                <button class="plus player-toggle" data-event="plus">
-                                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                                <i class="fa-solid fa-plus"></i>
                                                </button>
                                                <button class="minus player-toggle d-none" data-event="minus">
-                                            <i class="fa-solid fa-minus"></i>
+                                               <i class="fa-solid fa-minus"></i>
                                                </button>
                                             </td>
                                          </tr>
@@ -203,8 +203,8 @@
                                            <td class="credits_points">
                                               <span>{{ ($gk_player->injured == '1') ?
                                             'Yes' : 'No'}}</span>
-                                              <button class="plus player-toggle" data-event="plus">
-                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                              <button class="plus player-toggle" data-event="plus">                                     
+                                                 <i class="fa-solid fa-plus"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
                                               <i class="fa-solid fa-minus"></i>
@@ -255,11 +255,11 @@
                                            <td class="credits_points">
                                               <span>{{ ($gk_player->injured == '1') ?
                                             'Yes' : 'No'}}</span>
-                                              <button class="plus player-toggle" data-event="plus">
-                                                 <i class="fa fa-plus" aria-hidden="true"></i>
+                                              <button class="plus player-toggle" data-event="plus">                                        
+                                                 <i class="fa-solid fa-plus"></i>
                                               </button>
                                               <button class="minus player-toggle d-none" data-event="minus">
-                                             <i class="fa-solid fa-minus"></i>
+                                              <i class="fa-solid fa-minus"></i>
                                               </button>
                                            </td>
                                         </tr>

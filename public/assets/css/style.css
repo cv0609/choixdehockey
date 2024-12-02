@@ -2124,20 +2124,22 @@ section.my-profile {
     position: relative;
     width: 80px;
     margin: 0 auto;
-    height: 80px;
-    border-radius: 50%;
-    border:3px solid #fafb63;
-    background-image: url("../images/my-profile-dummy-img.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .edit_pan svg {
     height: 12px;
 }
-
+.update_img_user_img {
+    position: relative;
+    width: 80px;
+    margin: 0 auto;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fafb63;
+    overflow: hidden;
+}
 .edit_pan {
     position: absolute;
-    top: 70%;
+    top: 65%;
     background: #ffcf21;
     width: 28px;
     height: 28px;
@@ -2229,7 +2231,7 @@ span.edit_pan i {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 20px;
-    background-color: #6bfff7;
+    background-color: #fafb63;
     border: none;
     outline: none;
     font-size: 1rem;
