@@ -56,22 +56,21 @@
                                 <tr>
                                     <td class="match-team-logo">
                                         <a href="">
-                                            <div class="my-match-team-logo-inner my-match-team-logo-inner1"></div>
-                                            <h6>Ligue Magnus</h6>
+                                        <img src="{{ $match->home_team_logo ?? '' }}" alt="{{ $match->home_team_name ?? '' }} logo" alt="team-logo-3">
+                                        <h6>{{ $match->home_team_name ?? '' }}</h6>
                                         </a>
                                     </td>
                                     <td>
-                                        <h6>Accor Arena</h6>
-                                        <p>France</p>
-                                        <span>2024-12-21 07:30 PM</span>
-                                    </td>
+                                        <h6>{{ $match->venue_name ?? '' }}</h6>
+                                        <p>{{$match->venue_city ?? ''}}</p>
+                                        <span>{{ date('Y-m-d h:i a', strtotime($match->fixture_date ?? '')) }}</span>
+                                     </td>
                                     <td class="match-team-logo">
-
-                                        <div class="my-match-team-logo-inner my-match-team-logo-inner2"></div>
-                                        <h6>National Hockey League</h6>
+                                    <img src="{{ $match->away_team_logo ?? '' }}" alt="{{ $match->away_team_name ?? '' }} logo" alt="team-logo-2">
+                                    <h6>{{ $match->away_team_name ?? '' }}</h6>
                                     </td>
                                     <td class="match-score">
-                                        <h4>0</h4>
+                                        <h4>{{$points ?? 0}}</h4>
                                     </td>
                                     <td class="match-status">
                                         <p class="win">-- </p>
