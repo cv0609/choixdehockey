@@ -39,14 +39,12 @@
                         </div>
                         <div class="edit_option_bar">
                             <div class="content-bar">
-                                <span class="tabedit">Modifier le profil
-                                </span>
+                                <a href="{{route('profile.profile')}}" class="tabedit">Modifier le profil
+                                </a>
                             </div>
-                            <a href="{{ route('profile.change.password') }}">
                             <div class="content-bar">
-                                <span class="tabedit">Changer le mot de passe</span>
+                                <a href="{{ route('profile.change.password') }}" class="tabedit">Changer le mot de passe</a>
                             </div>
-                            </a>
                         </div>
                     </div>
                 </div>

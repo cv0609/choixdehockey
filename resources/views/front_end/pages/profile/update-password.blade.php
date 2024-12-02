@@ -24,11 +24,11 @@
                         </div>
                         <div class="edit_option_bar">
                             <div class="content-bar">
-                                <a href="my-profile" class="tabedit">Modifier le profil
+                                <a href="{{route('profile.profile')}}" class="tabedit">Modifier le profil
                                 </a>
                             </div>
                             <div class="content-bar">
-                                <a href="change-password" class="tabedit">Changer le mot de passe</a>
+                                <a href="{{ route('profile.change.password') }}" class="tabedit">Changer le mot de passe</a>
                             </div>
                         </div>
                     </div>
