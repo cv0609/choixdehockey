@@ -42,9 +42,11 @@
                                 <span class="tabedit">Modifier le profil
                                 </span>
                             </div>
+                            <a href="{{ route('profile.change.password') }}">
                             <div class="content-bar">
                                 <span class="tabedit">Changer le mot de passe</span>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
