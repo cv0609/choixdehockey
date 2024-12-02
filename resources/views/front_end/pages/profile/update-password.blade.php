@@ -42,7 +42,7 @@
                                     @csrf
                                         <div class="row">
                                             <div class="mb-3 col-sm-6">
-                                                <input type="text" placeholder="Mot de passe actuel"
+                                                <input type="password" placeholder="Mot de passe actuel"
                                                     class="form-control para" id="name" required="required"
                                                     autocomplete="off" name="current_password">
                                                     @error("current_password")
@@ -50,7 +50,7 @@
                                           @enderror
                                             </div>
                                             <div class="mb-3 col-sm-6">
-                                                <input type="text" placeholder="Nouveau mot de passe"
+                                                <input type="password" placeholder="Nouveau mot de passe"
                                                     class="form-control para" id="last-name" required="required"
                                                     autocomplete="off" name="new_password">
                                                     @error("new_password")
@@ -58,7 +58,7 @@
                                           @enderror
                                             </div>
                                             <div class="mb-3 col-sm-6">
-                                                <input type="email" placeholder="Confirmez le mot de passe"
+                                                <input type="password" placeholder="Confirmez le mot de passe"
                                                     class="form-control para" id="email" required="required"
                                                     autocomplete="off" name="new_password_confirmation">
                                             </div>                                         
