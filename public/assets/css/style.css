@@ -1223,7 +1223,7 @@ img {
     text-align: center;
 }
 .matches-page td.player-name p{
-    color: #000;
+    color: #000 !important;
 }
 
 .matches-page .ice-leagues thead tr th:last-child {
