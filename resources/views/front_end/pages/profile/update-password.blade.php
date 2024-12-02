@@ -22,7 +22,7 @@
                                 </form> 
                             </div>
                             <div class="user_name">
-                                <h3>Tom Holland</h3>
+                            <h3>{{Auth::user()->name}}</h3>
                             </div>
                         </div>
                         <div class="edit_option_bar">
