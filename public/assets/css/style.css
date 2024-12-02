@@ -3010,3 +3010,28 @@ body.modal-open .custom-modal .custom-modal-dialog {
     font-size: 18px;
     color: #000;
 }
+
+
+
+.match-details h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.match-details .flex{
+    justify-content: center !important;
+}
+.match-details td.player-name p {
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
+.match-details .palyer-header .team-logo h6 {
+    font-size: 17px;
+    color: #000;
+}
+.match-details .palyer-header .match-details span {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
