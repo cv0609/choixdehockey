@@ -2977,4 +2977,12 @@ body.modal-open .custom-modal .custom-modal-dialog {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.modal-body span svg {
+    width: 50px;
+    height: 50px;
+    margin: 10px  auto 30px;
+    text-align: center;
+}
+
 /* Modal CSS End */
