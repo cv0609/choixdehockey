@@ -24,7 +24,7 @@ class AuthController extends Controller
     {
         $res = [];
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            dd(Auth::check());
+           
             if(Session::has('myTeam')){
               $res =  ["success"=>true,"url"=>route('my-team')] ;
             }else{
