@@ -3101,3 +3101,6 @@ td.player-name p {
     margin-bottom: 30px;
     text-align: center;
 }
+.matches-details td.credits_points {
+    position: relative;
+}
