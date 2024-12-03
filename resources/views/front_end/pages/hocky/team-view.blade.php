@@ -261,7 +261,8 @@
     });
 
      $('#login-click').on('click',function(){
-        window.location.href = "{{ route('login') }}";
+        $("#exampleModalToggle2").modal('show');
+        //window.location.href = "{{ route('login') }}";
      })
 
      $('#save-team-btn').on('click', function(e) {
