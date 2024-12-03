@@ -59,7 +59,7 @@ Route::get('leagues', [HockyController::class, 'leagues'])->name('leagues');
 Route::get('/league/{leagueId}/matches', [HockyController::class, 'getLeagueMatches'])->name('leagueMatches');
 Route::get('/matche-detail/{matcheId}', [HockyController::class, 'matchDetails'])->name('matche-detail');
 
-Route::get('/my-team', [HockyController::class, 'viewTeam'])->name('my-team')->middleware('myTeamMiddleware');
+Route::match(['get', 'post'],'/my-team', [HockyController::class, 'viewTeam'])->name('my-team')->middleware('myTeamMiddleware');
 Route::get('/current-team-count', [HockyController::class, 'currentTeamCount'])->name('current-team-count');
 Route::get('/auth.check', [HockyController::class, 'AuthCheck'])->name('auth.check');
 Route::post('/make-captain', [HockyController::class, 'makeCaptain'])->name('make.captain');
