@@ -23,7 +23,7 @@
 
     <!-- Leagues Content Section Start -->
 
-    <section class="ice-leagues matches-details ">
+    <section class="ice-leagues match-details  matches-details">
         <div class="container">
             <div class="ice-leagues-inner">
                 <div class="back-btn">

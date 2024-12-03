@@ -1270,7 +1270,10 @@ img {
     font-size: 30px;
     margin-bottom: 50px;
 }
-.match-details table tr td p {
+.matches-details table tr td p {
+    color: #000;
+}
+.matches-details table tr td p {
     color: #000;
 }
 
@@ -1843,6 +1846,7 @@ table tr td a::before {
     position: absolute;
     background: transparent;
     inset: 0;
+    top:62px;
 }
 
 table tr {
