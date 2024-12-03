@@ -3112,3 +3112,18 @@ td.player-name p {
 .ice-leagues table {
     position: relative;
 }
+.ice-leagues-inner {
+    position: relative;
+}
+span.alert.alert-success {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+}
+div#myTable_filter input {
+    margin-left: 10px;
+}
