@@ -1653,6 +1653,7 @@ td.match-team-logo a::before {
     position: absolute;
     background: transparent;
     inset: 0;
+    top:62px
 }
 td.match-status p {
     color: #000;
@@ -3106,5 +3107,8 @@ td.player-name p {
     text-align: center;
 }
 .matches-details td.credits_points {
+    position: relative;
+}
+.matches-details table {
     position: relative;
 }
