@@ -382,5 +382,84 @@
    });
 </script>
 
+<script>
+    $(document).ready(function () {
+        $('#loginForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent form submission
 
+            let email = $('#login-email').val();
+            let password = $('#login-password-field').val();
+            
+            $.ajax({
+                url: "{{ route('login.post') }}", // Laravel route name
+                type: "POST",
+                data: {
+                    email: email,
+                    password: password,
+                    _token: "{{ csrf_token() }}" // CSRF token for Laravel
+                },
+                success: function (response) {
+                    
+                    if (response.success) {
+                        window.location.href = response.url;
+                        // $('#responseMessage_login').html('<p style="color: green;">' + response.message + '</p>');
+                        // // Optionally redirect
+                        // setTimeout(function () {
+                        //     window.location.reload();
+                        // }, 2000); // 2-second delay
+                    } else {
+                        $('#responseMessage_login').html('<p style="color: red;">' + response.message + '</p>');
+                    }
+                },
+                error: function (xhr) {
+                    let errorMessage = xhr.responseJSON.message || 'An error occurred.';
+                    $('#responseMessage_login').html('<p style="color: red;">' + errorMessage + '</p>');
+                }
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#registerForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Gather form data
+            let formData = {
+                name: $('#name').val(),
+                username: $('#username').val(),
+                email: $('#email').val(),
+                password: $('#password').val(),
+                password_confirmation: $('#password_confirmation').val(),
+                _token: "{{ csrf_token() }}" // Laravel CSRF token
+            };
+
+            $.ajax({
+                url: "{{ route('signup.post') }}", // Replace with your register route URL if necessary
+                type: "POST",
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        $('#responseMessage').html('<p style="color: green;">' + response.message + '</p>');
+                        // Optionally redirect to another page
+                        window.location.href = "{{ route('home') }}";
+                    } else {
+                        $('#responseMessage').html('<p style="color: red;">' + response.message + '</p>');
+                    }
+                    setTimeout(function () {
+                            window.location.reload();
+                        }, 2000); // 2-second delay
+                },
+                error: function (xhr) {
+                    let errors = xhr.responseJSON.errors;
+                    let errorMessages = '';
+                    for (const field in errors) {
+                        errorMessages += `<p style="color: red;">${errors[field][0]}</p>`;
+                    }
+                    $('#responseMessage').html(errorMessages);
+                }
+            });
+        });
+    });
+</script>
 @endsection
