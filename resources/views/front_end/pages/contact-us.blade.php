@@ -40,17 +40,17 @@
                         <div class="col-md-6">
                             <div class="header-pages-cards-content">
                                 <div class="form-wrapper">
-                                    <form id="contact" action="#" method="post" onsubmit="return validateForm()">
+                                    <form id="contact" action="{{ route('contact.save') }}" method="post" onsubmit="return validateForm()">
                                         <fieldset>
                                             <input class="contact-form" placeholder="Nom" type="text" tabindex="1"
-                                                required minlength="2" maxlength="100">
+                                                required id="name" minlength="2" maxlength="100" name="name" value="{{ old('name') }}">
                                         </fieldset>
                                         <fieldset>
                                             <input class="contact-email" placeholder="E-mail" type="email" tabindex="2"
-                                                required>
+                                              name="email" id="email" value="{{ old('email') }}"  required>
                                         </fieldset>
                                         <fieldset>
-                                            <select class="contact-topic" required>
+                                            <select class="contact-topic" id="subject" name="subject" value="{{ old('subject') }}" required>
                                                 <option value="">Sujet</option>
                                                 <option value="general">Demandes générales</option>
                                                 <option value="product-info">Lié au produit</option>
@@ -58,8 +58,8 @@
                                             </select>
                                         </fieldset>
                                         <fieldset>
-                                            <textarea name="message" class="message" placeholder="Votre message"
-                                                required minlength="10" maxlength="1000"></textarea>
+                                            <textarea name="message" id="message" class="message" placeholder="Votre message"
+                                                required maxlength="1000">{{ old('message') }}</textarea>
                                         </fieldset>
                                         <fieldset>
                                             <button name="submit" type="submit" class="contact-submit butn"
