@@ -7,7 +7,7 @@ use Carbon\Carbon;
 @endphp
 
    <!--====sign up section start====-->
-<section class="premier_bg premier_players ice-leagues match-details">
+<section class="premier_bg premier_players ice-leagues match-details-page">
          <div class="container">
             <div class="ice-leagues-inner leagure_container">
                <div class="items-center justify-center w-screen min-h-screen bg-gray-900 py-10"> 

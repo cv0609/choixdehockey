@@ -555,7 +555,7 @@ img {
 }
 
 .home-why-hockey-heading {
-   font-size: 36px;
+    font-size: 36px;
     color: #000000;
     font-style: italic;
     font-weight: 600;
@@ -565,11 +565,13 @@ img {
     text-transform: uppercase;
 
 }
-.home-why-hockey-heading1{
+
+.home-why-hockey-heading1 {
     display: inline-block;
     padding: 15px 15px;
 }
-.home-why-hockey-heading2{
+
+.home-why-hockey-heading2 {
     display: block;
     padding: 15px 15px;
 }
@@ -1201,10 +1203,12 @@ img {
     font-size: 15px;
     vertical-align: middle;
 }
-.ice-leagues tbody tr td{
+
+.ice-leagues tbody tr td {
     padding: 0;
     cursor: pointer;
 }
+
 .ice-leagues thead tr th {
     padding: 20px 30px;
     color: #29292a;
@@ -1213,14 +1217,21 @@ img {
     background: #f8f9fa;
     text-transform: uppercase;
 }
-.team-view-page .ice-leagues thead tr th:nth-child(2),.team-view-page .ice-leagues thead tr th:nth-child(3),.team-view-page .ice-leagues thead tr th:nth-child(4){
+
+.team-view-page .ice-leagues thead tr th:nth-child(2),
+.team-view-page .ice-leagues thead tr th:nth-child(3),
+.team-view-page .ice-leagues thead tr th:nth-child(4) {
     text-align: center;
 }
 
-.matches-page .ice-leagues thead tr th:nth-child(2) ,.team-players-page .ice-leagues thead tr th:nth-child(3),.team-players-page .ice-leagues thead tr th:nth-child(2),.team-players-page .ice-leagues thead tr th:nth-child(4){
+.matches-page .ice-leagues thead tr th:nth-child(2),
+.team-players-page .ice-leagues thead tr th:nth-child(3),
+.team-players-page .ice-leagues thead tr th:nth-child(2),
+.team-players-page .ice-leagues thead tr th:nth-child(4) {
     text-align: center;
 }
-.matches-page td.player-name p{
+
+.matches-page td.player-name p {
     color: #000 !important;
 }
 
@@ -1270,9 +1281,11 @@ img {
     font-size: 30px;
     margin-bottom: 50px;
 }
+
 .matches-details table tr td p {
     color: #000;
 }
+
 .matches-details table tr td p {
     color: #000;
 }
@@ -1531,7 +1544,7 @@ td.player-dp img {
 }
 
 .matches-table th {
-    background:#fafb63 !important;
+    background: #fafb63 !important;
     color: #000 !important;
 }
 
@@ -1653,20 +1666,23 @@ td.match-team-logo a::before {
     position: absolute;
     background: transparent;
     inset: 0;
-    top:62px
+    top: 62px
 }
+
 td.match-status p {
     color: #000;
     font-size: 19px;
     font-weight: 600;
 }
-.my-matches-page table td:nth-child(2) p{
+
+.my-matches-page table td:nth-child(2) p {
     color: #000;
     font-weight: 600;
     margin-bottom: 4px;
 }
-.my-matches-page table td:nth-child(2) h6{
-font-weight: 600;
+
+.my-matches-page table td:nth-child(2) h6 {
+    font-weight: 600;
 }
 
 .league-logo {
@@ -1692,10 +1708,11 @@ font-weight: 600;
 .league-logo-inner2 {
     background-image: url("../images/NationalHockeyLeagueLogo.jpg");
 }
-.leagues-table{
+
+.leagues-table {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-    max-width: 100%; 
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
 }
 
 .leagues-table tbody tr {
@@ -1847,7 +1864,7 @@ table tr td a::before {
     position: absolute;
     background: transparent;
     inset: 0;
-    top:62px;
+    top: 62px;
 }
 
 table tr {
@@ -1891,7 +1908,8 @@ table tr {
     font-weight: 600;
 }
 
-.matches-details .player-name p ,.team-players-page .player-name p {
+.matches-details .player-name p,
+.team-players-page .player-name p {
     color: #000;
     text-align: left;
     font-weight: 600;
@@ -1947,25 +1965,34 @@ td.match-team-logo h6 {
 td.match-team-logo a {
     color: #000;
 }
-.match-team-logo-inner,.team-players-logo-inner,.player-dp-inner ,.my-match-team-logo-inner{
+
+.match-team-logo-inner,
+.team-players-logo-inner,
+.player-dp-inner,
+.my-match-team-logo-inner {
     height: 35px;
     width: 35px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image:url("../images/LigueMagnus.png") ;
+    background-image: url("../images/LigueMagnus.png");
 }
-.my-match-team-logo-inner{
+
+.my-match-team-logo-inner {
     margin: 0 auto;
 }
-.my-matches-page .ice-leagues thead tr th:nth-child(3),.my-matches-page .ice-leagues thead tr th:nth-child(4),.my-matches-page .ice-leagues thead tr th:nth-child(5){
-    text-align:center ;
+
+.my-matches-page .ice-leagues thead tr th:nth-child(3),
+.my-matches-page .ice-leagues thead tr th:nth-child(4),
+.my-matches-page .ice-leagues thead tr th:nth-child(5) {
+    text-align: center;
 }
 
 
 #dropdown {
     display: none;
 }
+
 .avatar-content img {
     width: 45px;
     aspect-ratio: 1;
@@ -1984,7 +2011,8 @@ td.match-team-logo a {
     display: none;
     max-width: 200px;
 }
-.profile-image{
+
+.profile-image {
     width: 40px;
     height: 40px;
     background-image: url(../images/my-profile-dummy-img.png);
@@ -1993,6 +2021,7 @@ td.match-team-logo a {
     background-repeat: no-repeat;
     border-radius: 50%;
 }
+
 .profile {
     margin-left: 30px;
 }
@@ -2031,12 +2060,14 @@ div#mySidenavs {
     color: #fff;
     font-size: 17px;
 }
+
 .avatar-content svg {
     height: 20px;
     width: 20px;
     background: #fafb63;
 }
-.profile-dropdown-options{
+
+.profile-dropdown-options {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2045,13 +2076,16 @@ div#mySidenavs {
     display: inline-block;
     margin-right: 10px;
 }
-.profile-image-dropdown{
+
+.profile-image-dropdown {
     background-image: url("../images/profile-option-image.png");
 }
-.profile-image-stadium{
+
+.profile-image-stadium {
     background-image: url("../images/profile-stadium.png");
 }
-.profile-image-logout{
+
+.profile-image-logout {
     background-image: url("../images/profile-logout.png");
 }
 
@@ -2135,9 +2169,11 @@ section.my-profile {
     width: 80px;
     margin: 0 auto;
 }
+
 .edit_pan svg {
     height: 12px;
 }
+
 .update_img_user_img {
     position: relative;
     width: 80px;
@@ -2147,6 +2183,7 @@ section.my-profile {
     border: 3px solid #fafb63;
     overflow: hidden;
 }
+
 .edit_pan {
     position: absolute;
     top: 65%;
@@ -2186,9 +2223,10 @@ section.my-profile {
     display: inline-block;
     transition: 0.4s all ease-in-out;
 }
-.content-bar span:hover{
+
+.content-bar span:hover {
     background: #fff;
-    box-shadow:#6bfff7 0px 3px 8px;
+    box-shadow: #6bfff7 0px 3px 8px;
 }
 
 .edit_option_bar {
@@ -2251,10 +2289,11 @@ span.edit_pan i {
     cursor: pointer;
     transition: 0.4s all ease-in-out;
 }
-.user-content-box button:hover{
+
+.user-content-box button:hover {
     background-color: #fff;
     color: #000;
-    box-shadow:#6bfff7 0px 3px 8px;
+    box-shadow: #6bfff7 0px 3px 8px;
 }
 
 .reset-password {
@@ -2330,7 +2369,8 @@ td.match-score h4 {
 }
 
 
-.match-details-header-logo,.team-players-header-logo {
+.match-details-header-logo,
+.team-players-header-logo {
     height: 35px;
     width: 35px;
     background-position: center;
@@ -2346,12 +2386,15 @@ td.match-score h4 {
 .match-details-header-logo2 {
     background-image: url("../images/NationalHockeyLeagueLogo.jpg");
 }
-.team-players-header-logo1{
+
+.team-players-header-logo1 {
     background-image: url("../images/LigueMagnus.png");
-} 
+}
+
 .team-players-header-logo2 {
     background-image: url("../images/NationalHockeyLeagueLogo.jpg");
 }
+
 .leagues .small-logo tbody tr td:first-child {
     width: 120px;
 }
@@ -2401,19 +2444,23 @@ td.match-score h4 {
     background-color: rgba(0 0 0/20%);
     background-blend-mode: multiply;
 }
+
 .leagues-pages {
-    height: 300px;;
+    height: 300px;
+    ;
     background-image: url("../images/leagues-banner-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0 0 0/20%);
 }
-.about-banner{
+
+.about-banner {
     background-image: url("../images/about-banner-image.jpg");
     background-color: rgba(0 0 0/20%);
 }
-.contact-banner{
+
+.contact-banner {
     background-image: url("../images/contact-banner-image.jpg");
     background-color: rgba(0 0 0/20%);
 }
@@ -2425,6 +2472,7 @@ td.match-score h4 {
     line-height: 1.4;
     color: #fff;
 }
+
 .header-pages-cards-content h3 {
     font-size: 25px;
     margin-bottom: 15px;
@@ -2433,9 +2481,10 @@ td.match-score h4 {
 
 .header-pages-cards {
     margin-bottom: 35px;
-    padding:0 20px;
+    padding: 0 20px;
 }
-.header-pages-cards:last-child{
+
+.header-pages-cards:last-child {
     margin-bottom: 0;
 }
 
@@ -2447,6 +2496,7 @@ td.match-score h4 {
 .header-pages-cards-content p strong {
     color: #fafb63;
 }
+
 .about-card1-image {
     background-image: url("../images/about-card1-image.jpg");
     height: 400px;
@@ -2464,31 +2514,38 @@ td.match-score h4 {
     height: 400px;
     border-radius: 20px;
 }
+
 .about-card4-image {
     background-image: url("../images/about-card4-image.jpg");
     height: 400px;
     border-radius: 20px;
 }
+
 .about-card5-image {
     background-image: url("../images/about-card5-image.jpg");
     height: 400px;
     border-radius: 20px;
 }
+
 .about-card6-image {
     background-image: url("../images/about-card6-image.jpg");
     height: 400px;
     border-radius: 20px;
-}.about-card7-image {
+}
+
+.about-card7-image {
     background-image: url("../images/about-card7-image.jpg");
     height: 400px;
     border-radius: 20px;
 }
+
 .header-pages-cards-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
+
 .form-wrapper {
     height: auto;
     width: 100%;
@@ -2613,6 +2670,7 @@ fieldset {
     background-size: 16px;
     padding-right: 30px;
 }
+
 .header-pages-cards h3 {
     margin-bottom: 15px;
     color: #fafb63;
@@ -2663,6 +2721,7 @@ fieldset {
 .footer-pages-content-grp ul li {
     position: relative;
 }
+
 .after-banner-text p {
     font-size: 17px;
     max-width: 1300px;
@@ -2685,7 +2744,7 @@ fieldset {
     background-color: rgba(0 0 0/20%);
 }
 
-.privacy-banner{
+.privacy-banner {
     background-image: url(../images/privacy-banner-image.jpg);
     background-color: rgba(0 0 0/20%);
 }
@@ -2798,39 +2857,48 @@ div#myTable_length {
     margin-bottom: 30px;
     margin-left: 135px;
 }
+
 div#myTable_filter {
     display: inline-block;
     float: right;
     margin-right: 135px;
 }
-div#myTable_length label ,div#myTable_filter label{
-    color:#fff
+
+div#myTable_length label,
+div#myTable_filter label {
+    color: #fff
 }
+
 .league-page .sorting.sorting_asc {
     width: 50px !important;
 }
+
 div#myTable_info {
     display: inline-block;
     margin-top: 30px;
-    color:#fff;
-    margin-left:135px;
+    color: #fff;
+    margin-left: 135px;
 }
+
 div#myTable_paginate {
     display: inline-block;
     float: right;
     margin-top: 30px;
-    margin-right:135px;
+    margin-right: 135px;
 }
+
 #myTable_previous {
     color: #fff;
     margin-right: 10px;
     cursor: pointer;
 }
+
 #myTable_next {
     color: #fff;
     margin-left: 10px;
     cursor: pointer;
 }
+
 .paginate_button.current {
     display: inline-block;
     padding: 5px 15px;
@@ -2838,28 +2906,38 @@ div#myTable_paginate {
     color: #000;
     border-radius: 5px;
 }
+
 .matches-page .ice-leagues thead tr th:nth-child(2) {
     text-align: center;
 }
+
 .matches-page.ice-leagues thead tr th:nth-child(2) {
     text-align: center !important;
 }
+
 .matches-page.ice-leagues thead tr th:nth-child(3) {
     text-align: right !important;
 }
+
 .match-details .team-logo img {
     height: 35px;
     width: 35px;
 }
+
 .match-details .matches-table tr td:first-child {
     text-align: left !important;
 }
+
 .match-details .ice-leagues tbody tr td:nth-child(2) {
     text-align: left !important;
 }
-.ice-leagues-inner-content .matche-det table th:nth-child(2),.ice-leagues-inner-content .matche-det table th:nth-child(3),.ice-leagues-inner-content .matche-det table th:nth-child(4) {
+
+.ice-leagues-inner-content .matche-det table th:nth-child(2),
+.ice-leagues-inner-content .matche-det table th:nth-child(3),
+.ice-leagues-inner-content .matche-det table th:nth-child(4) {
     text-align: center !important;
 }
+
 tr.matche-main td p {
     color: #000;
     font-size: 17px;
@@ -2890,24 +2968,27 @@ tr.matche-main td p {
     border-color: #00c900 !important;
 }
 
- .my-team-page .team-view-table td {
+.my-team-page .team-view-table td {
     padding: 30px 30px !important;
 }
-.my-team-page .ice-leagues thead tr th{
-    text-align: center!important;
+
+.my-team-page .ice-leagues thead tr th {
+    text-align: center !important;
 }
 
 
 /* Modal CSS Start */
-.modal-container{
+.modal-container {
     padding: 200px 0;
 }
+
 .modal-link {
     padding: 15px 20px;
     background: green;
     border-radius: 10px;
     color: #fff;
 }
+
 .modal-ok-btn {
     margin-top: 20px;
     /* border: 1px solid #000; */
@@ -2931,12 +3012,14 @@ tr.matche-main td p {
     justify-content: center;
     padding: 30px;
 }
+
 .custom-modal-dialog {
     max-width: 620px;
     width: 100%;
     border-radius: 0px;
     position: relative;
 }
+
 .custom-modal-content {
     background: #ffffff;
     padding: 30px 30px;
@@ -2946,6 +3029,7 @@ tr.matche-main td p {
     align-items: center;
     justify-content: center;
 }
+
 .close-modal {
     position: absolute;
     top: -10px;
@@ -2964,21 +3048,25 @@ tr.matche-main td p {
     line-height: 30px;
     cursor: pointer;
 }
+
 .custom-modal {
     opacity: 0;
     visibility: hidden;
 }
+
 body.modal-open .custom-modal {
     opacity: 1;
     visibility: visible;
 }
-.custom-modal .custom-modal-dialog{
+
+.custom-modal .custom-modal-dialog {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
     transform: scale(0);
 }
+
 body.modal-open .custom-modal .custom-modal-dialog {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -2986,7 +3074,11 @@ body.modal-open .custom-modal .custom-modal-dialog {
     -o-transform: scale(1);
     transform: scale(1);
 }
-.custom-modal, body .custom-modal, body.modal-open .custom-modal .custom-modal-dialog, body .custom-modal .custom-modal-dialog{
+
+.custom-modal,
+body .custom-modal,
+body.modal-open .custom-modal .custom-modal-dialog,
+body .custom-modal .custom-modal-dialog {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -2997,9 +3089,10 @@ body.modal-open .custom-modal .custom-modal-dialog {
 .modal-body span svg {
     width: 80px;
     height: 80px;
-    margin: 10px  auto 30px;
+    margin: 10px auto 30px;
     text-align: center;
 }
+
 .modal-footer {
     justify-content: center !important;
 }
@@ -3012,6 +3105,7 @@ body.modal-open .custom-modal .custom-modal-dialog {
     padding: 10px;
     border-radius: 10px;
 }
+
 .modal-footer button {
     background-color: #fafb63;
     border: none;
@@ -3025,39 +3119,48 @@ body.modal-open .custom-modal .custom-modal-dialog {
     margin-bottom: 30px;
     color: #fff;
 }
-.match-details .flex{
+
+.match-details .flex {
     justify-content: center !important;
 }
+
 .match-details td.player-name p {
     color: #000;
     font-size: 17px;
     font-weight: 500;
 }
+
 .match-details .palyer-header .team-logo h6 {
     font-size: 17px;
     color: #000;
 }
+
 .match-details .palyer-header .match-details span {
     font-size: 15px;
     margin-bottom: 10px;
     color: #000;
 }
+
 .ice-leagues tbody tr td p {
     color: #000;
     font-weight: 600;
 }
+
 .paginate_button {
     padding: 5px 15px;
     color: #fff;
 }
+
 td.player-name p {
     color: #000;
     font-weight: 600;
 }
+
 .ice-leagues tbody tr td p {
     color: #000;
     font-size: 17px;
 }
+
 .palyer-header::after {
     background: #fafb63;
     position: absolute;
@@ -3068,18 +3171,21 @@ td.player-name p {
     z-index: -1;
     border-radius: 14px;
 }
+
 .palyer-header .team-logo h6 {
     text-transform: capitalize;
     font-size: 16px;
     color: #000;
     font-weight: 600;
 }
+
 .palyer-header .match-details span {
     font-size: 14px;
     margin-bottom: 10px;
     color: #000;
 }
-.match-details .flex{
+
+.match-details .flex {
     justify-content: center !important;
 }
 
@@ -3101,20 +3207,25 @@ td.player-name p {
     margin-top: 10px;
     border-color: #00c900 !important;
 }
+
 .font-medium {
     color: #fff;
     margin-bottom: 30px;
     text-align: center;
 }
+
 .matches-details td.credits_points {
     position: relative;
 }
+
 .ice-leagues table {
     position: relative;
 }
+
 .ice-leagues-inner {
     position: relative;
 }
+
 span.alert.alert-success {
     position: absolute;
     width: 100%;
@@ -3124,6 +3235,18 @@ span.alert.alert-success {
     transform: translateX(-50%);
     padding: 5px;
 }
+
 div#myTable_filter input {
     margin-left: 10px;
+}
+
+.match-details-page .ice-leagues thead tr th:nth-child(2),
+.match-details-page .ice-leagues thead tr th:nth-child(3),
+.match-details-page .ice-leagues thead tr th:nth-child(4),
+.match-details-page .ice-leagues thead tr th:nth-child(5) {
+    text-align: center;
+}
+
+.league-page .ice-leagues thead tr th {
+    text-align: left !important;
 }
