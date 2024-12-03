@@ -38,6 +38,9 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                        @if(Session::has('success'))
+                        <span class="alert alert-success text-center" style="width: 746px;">{{ Session::get('success') }}</span>
+                        @endif
                             <div class="header-pages-cards-content">
                                 <div class="form-wrapper">
                                     <form id="contact" action="{{ route('contact.save') }}" method="post" onsubmit="return validateForm()">
