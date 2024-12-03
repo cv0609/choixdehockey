@@ -5,7 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HockyController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\admin\AuthController as AdminAuthController;
+use App\Http\Controllers\admin\HomeController as AdminHomeAuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,6 +64,21 @@ Route::get('/current-team-count', [HockyController::class, 'currentTeamCount'])-
 Route::get('/auth.check', [HockyController::class, 'AuthCheck'])->name('auth.check');
 Route::post('/make-captain', [HockyController::class, 'makeCaptain'])->name('make.captain');
 Route::post('/create-team', [HockyController::class, 'createTeam'])->name('create-team');
+
+Route::prefix('admin')->group(function () {
+
+    Route::get('/login',[AdminAuthController::class,'login'])->name('admin.login');
+    Route::post('/login', [AdminAuthController::class, 'authLogin'])->name('admin.auth.login');
+    Route::get('/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
+
+    Route::middleware('auth:admin')->group(function () {
+        Route::get('/dashboard',[AdminAuthController::class,'dashboard'])->name('admin.dashboard');
+        Route::get('/users', [AdminHomeAuthController::class, 'getUsersList'])->name('admin.users');
+        Route::get('/contact-us', [AdminHomeAuthController::class, 'contactList'])->name('admin.contact');
+
+    });
+});
+
 
 
 
