@@ -3250,3 +3250,6 @@ div#myTable_filter input {
 .league-page .ice-leagues thead tr th {
     text-align: left !important;
 }
+.match-details-page .flex {
+    justify-content: center;
+}

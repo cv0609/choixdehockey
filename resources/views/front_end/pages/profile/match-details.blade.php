@@ -13,7 +13,7 @@ use Carbon\Carbon;
                <div class="items-center justify-center w-screen min-h-screen bg-gray-900 py-10"> 
                   <div class="back-btn">                 
                   <a href="{{ route('profile.matches') }}" class="back-btn">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
                         <path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/>
                      </svg>
                   </a>
