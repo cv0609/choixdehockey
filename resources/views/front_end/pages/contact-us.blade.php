@@ -41,6 +41,7 @@
                             <div class="header-pages-cards-content">
                                 <div class="form-wrapper">
                                     <form id="contact" action="{{ route('contact.save') }}" method="post" onsubmit="return validateForm()">
+                                        @csrf
                                         <fieldset>
                                             <input class="contact-form" placeholder="Nom" type="text" tabindex="1"
                                                 required id="name" minlength="2" maxlength="100" name="name" value="{{ old('name') }}">
