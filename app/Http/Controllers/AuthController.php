@@ -23,7 +23,7 @@ class AuthController extends Controller
     public function loginPost(LoginRequest $request)
     {
         $res = [];
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        if (Auth::guard('user')->attempt(['email' => $request->email, 'password' => $request->password])) {
            
             if(Session::has('myTeam')){
               $res =  ["success"=>true,"url"=>route('my-team')] ;
