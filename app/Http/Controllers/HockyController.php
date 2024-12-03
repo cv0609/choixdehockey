@@ -72,7 +72,7 @@ class HockyController extends Controller
 
 
       public function viewTeam(){
-       dd(Auth::check());
+     
         $myTeam = [];
         if(Session::has('myTeam')){
             $myTeam = Session::get('myTeam', []);
