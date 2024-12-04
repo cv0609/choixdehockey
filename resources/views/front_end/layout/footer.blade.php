@@ -29,7 +29,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-blocks footer-socials">
+                <!-- <div class="footer-blocks footer-socials">
                     <h3>
                         Phone
                     </h3>
@@ -56,7 +56,7 @@
                             <div class="social-ikons insta"></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="footer-blocks footer-disclaimer">
                     <h3>
                         Avertissement
